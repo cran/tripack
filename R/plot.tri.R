@@ -25,8 +25,8 @@ plot.tri<-function(tri.obj,add=F,xlim=range(tri.obj$x),
                  nbnos=as.integer(nbnos),
                  na=as.integer(0),
                  nb=as.integer(0),
-                 nt=as.integer(0)
-                 )
+                 nt=as.integer(0),
+                 PACKAGE = "tripack")
   if(!add)
     {
       plot.new()

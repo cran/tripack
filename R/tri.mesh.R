@@ -49,7 +49,8 @@ tri.mesh <- function(x,y=NULL,duplicate="error")
                 tnear=integer(n),
                 tnext=integer(n),
                 tdist=double(n),
-                ier=as.integer(0))
+                ier=as.integer(0),
+                PACKAGE = "tripack")
   if(ans$ier==0)
     {
       tri.obj<-list(n=n,x=x1,y=y1,tlist=ans$tlist,tlptr=ans$tlptr,

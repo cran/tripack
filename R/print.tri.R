@@ -24,8 +24,8 @@ print.tri<-function(tri.obj)
                  nbnos=as.integer(nbnos),
                  na=as.integer(0),
                  nb=as.integer(0),
-                 nt=as.integer(0)
-                 )
+                 nt=as.integer(0),
+                 PACKAGE = "tripack")
   cat("triangulation nodes with neigbours:\n")
   cat("node: (x,y): neighbours\n")
   for (i in 1:tri.obj$n)

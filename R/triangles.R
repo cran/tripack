@@ -14,8 +14,8 @@ triangles<-function(tri.obj)
                  as.integer(nt),
                  tltri=integer(9*nt),
                  lct=integer(tri.obj$nc),
-                 ier=as.integer(0)
-                 )
+                 ier=as.integer(0),
+                 PACKAGE = "tripack")
   ret<-matrix(ans$tltri,nt,9,byrow=T)
   colnames(ret)<-c("node1","node2","node3","tr1","tr2","tr3","arc1","arc2","arc3")
   ret

@@ -24,8 +24,8 @@ summary.tri<-function(tri.obj, print=F)
                  nbnos=as.integer(nbnos),
                  na=as.integer(0),
                  nb=as.integer(0),
-                 nt=as.integer(0)
-                 )
+                 nt=as.integer(0),
+                 PACKAGE = "tripack")
   ans<-list(n=tri.obj$n,
             na=ans$na,
             nb=ans$nb,

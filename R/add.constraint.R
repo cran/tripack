@@ -44,8 +44,8 @@ add.constraint<-function(tri.obj,cstx,csty,reverse=F)
                  tlist=as.integer(tri.obj2$tlist),
                  tlptr=as.integer(tri.obj2$tlptr),
                  tlend=as.integer(tri.obj2$tlend),
-                 ier=as.integer(0)
-                 )
+                 ier=as.integer(0),
+                 PACKAGE = "tripack")
   if(ans$ier==0)
     {
       ret<-list(n=tri.obj1$n,x=tri.obj1$x,y=tri.obj1$y,

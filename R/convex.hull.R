@@ -12,8 +12,8 @@ convex.hull<-function(tri.obj,plot.it=F, add=F,...)
                  tborder=as.integer(tborder),
                  nb=as.integer(0),
                  na=as.integer(0),
-                 nt=as.integer(0)
-                 )
+                 nt=as.integer(0),
+                 PACKAGE = "tripack")
   ret<-list(x=tri.obj$x[ans$tborder[ans$tborder>0]],
             y=tri.obj$y[ans$tborder[ans$tborder>0]],
             i=seq(1,tri.obj$n)[ans$tborder[ans$tborder>0]])

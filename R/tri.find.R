@@ -14,7 +14,7 @@ tri.find<-function(tri.obj,x,y)
                  as.integer(tri.obj$tlend),
                  i1=as.integer(0),
                  i2=as.integer(0),
-                 i3=as.integer(0)
-                 )
+                 i3=as.integer(0),
+                 PACKAGE = "tripack")
   list(i1=ans$i1,i2=ans$i2,i3=ans$i3)
 }

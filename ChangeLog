@@ -1,3 +1,17 @@
+2001-01-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* /usr/local/cvsroot/tripack/R/triangles.R, /usr/local/cvsroot/tripack/R/voronoi.mosaic.R, /usr/local/cvsroot/tripack/R/add.constraint.R, /usr/local/cvsroot/tripack/R/convex.hull.R, /usr/local/cvsroot/tripack/R/in.convex.hull.R, /usr/local/cvsroot/tripack/R/neighbours.R, /usr/local/cvsroot/tripack/R/on.convex.hull.R, /usr/local/cvsroot/tripack/R/plot.tri.R, /usr/local/cvsroot/tripack/R/print.tri.R, /usr/local/cvsroot/tripack/R/summary.tri.R, /usr/local/cvsroot/tripack/R/tri.find.R, /usr/local/cvsroot/tripack/R/tri.mesh.R:
+	PACKAGE = "tripack" added to all .Fortran calls
+
+2001-01-03  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* /usr/local/cvsroot/tripack/DESCRIPTION: Maintainer field added
+
+2000-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* /usr/local/cvsroot/tripack/R/zzz.R, /usr/local/cvsroot/tripack/data/00Index:
+	update to 1.2.0
+
 2000-06-05  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* /usr/local/cvsroot/tripack/man/tri.Rd:
@@ -8,7 +22,7 @@
 	* /usr/local/cvsroot/tripack/man/tritest.Rd, /usr/local/cvsroot/tripack/INDEX:
 	better documentation entry for tritest
 
-	* /usr/local/cvsroot/tripack/data/00Index, /usr/local/cvsroot/tripack/data/index.doc, /usr/local/cvsroot/tripack/DESCRIPTION:
+	* /usr/local/cvsroot/tripack/data/index.doc:
 	last changes for R CMD build to succeed
 
 2000-06-03  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
@@ -18,28 +32,19 @@
 
 2000-05-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/R/tri.find.R:
-	fix from roger, now R CMD check works.
-
-	* /usr/local/cvsroot/tripack/R/zzz.R:
-	.First.lib corrected, library(tripack, lib.loc=...) should work again.
-
 	* /usr/local/cvsroot/tripack/man/add.constraint.Rd:
 	new example for add.constraint
 
 	* /usr/local/cvsroot/tripack/src/troutq.f: modified TRPRINT from Roger
 
-	* /usr/local/cvsroot/tripack/R/summary.tri.R, /usr/local/cvsroot/tripack/R/print.tri.R, /usr/local/cvsroot/tripack/R/plot.tri.R, /usr/local/cvsroot/tripack/R/neighbours.R:
-	modifications from Roger.Bivand@nhh.no, R CMD check works now
-
-2000-04-27  alge  <alge@alpha1-stat>
+2000-04-27  Kurs 07  <alge@alpha5-stat>
 
 	* /usr/local/cvsroot/tripack/orig/TRIPACK.shar:
 	latest original version of TRIPACK added
 
-2000-03-18  alge  <alge@alpha1-stat>
+2000-03-18  Kurs 07  <alge@alpha5-stat>
 
-	* /usr/local/cvsroot/tripack/src/troutp.f, /usr/local/cvsroot/tripack/src/voronoi.f, /usr/local/cvsroot/tripack/src/qsort.f, /usr/local/cvsroot/tripack/src/tripack.f, /usr/local/cvsroot/tripack/R/tri.mesh.R:
+	* /usr/local/cvsroot/tripack/src/troutp.f, /usr/local/cvsroot/tripack/src/voronoi.f, /usr/local/cvsroot/tripack/src/qsort.f, /usr/local/cvsroot/tripack/src/tripack.f:
 	new version of tripack, working.
 	errors for small number od points:
 	 maybe because then all triangles are border triangles.
@@ -49,9 +54,6 @@
 
 	* /usr/local/cvsroot/tripack/man/voronoi.mosaic.Rd, /usr/local/cvsroot/tripack/man/print.voronoi.Rd, /usr/local/cvsroot/tripack/man/plot.voronoi.Rd, /usr/local/cvsroot/tripack/man/plot.tri.Rd, /usr/local/cvsroot/tripack/man/outer.convhull.Rd, /usr/local/cvsroot/tripack/man/on.convex.hull.Rd, /usr/local/cvsroot/tripack/man/in.convex.hull.Rd, /usr/local/cvsroot/tripack/man/convex.hull.Rd:
 	examples corrected so that "R CMD check" succeeds
-
-	* /usr/local/cvsroot/tripack/R/add.constraint.R:
-	error with summary corrected
 
 1999-09-07  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -67,9 +69,6 @@
 1998-07-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* /usr/local/cvsroot/tripack/man/voronoi.Rd: new return value ratio
-
-	* /usr/local/cvsroot/tripack/R/voronoi.mosaic.R, /usr/local/cvsroot/tripack/R/triangles.R:
-	additional removal of triangles at the border
 
 1998-07-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -97,10 +96,6 @@
 
 1998-06-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/R/convex.hull.R, /usr/local/cvsroot/tripack/R/on.convex.hull.R:
-	new functions for voronoi mosaic corrected.
-	Plots should now work at the border.
-
 	* /usr/local/cvsroot/tripack/TITLE: new functions for voronoi mosaic
 
 1998-05-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
@@ -111,7 +106,7 @@
 
 1998-05-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/R/in.convex.hull.R, /usr/local/cvsroot/tripack/R/outer.convhull.R:
+	* /usr/local/cvsroot/tripack/R/outer.convhull.R:
 	additional functions using convex hull
 
 1998-03-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>

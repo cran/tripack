@@ -71,7 +71,8 @@
                   iccc=as.integer(iccc),
                   lct=integer(tri.obj$nc),
                   as.integer(tmptri),
-                  ier=as.integer(0))
+                  ier=as.integer(0),
+                 PACKAGE = "tripack")
     lccc<-matrix(ans$lccc,nt,4,byrow=T)
     iccc<-matrix(ans$iccc,nt,6,byrow=T)
     ret<-list(x=lccc[,1],
@@ -90,7 +91,7 @@
     ret$dummy.x<-integer(0)
     ret$dummy.y<-integer(0)
     dummy.cnt<-0
-    dmax<-max(diff(range(ret$x)),diff(range(ret$x)))
+    dmax<-max(diff(range(ret$x)),diff(range(ret$y)))
     n<-length(ret$x)
     # add dummy nodes on the border of the triangulation
     for (i in 1:n)
