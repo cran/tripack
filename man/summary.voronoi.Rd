@@ -25,4 +25,8 @@
   \code{\link{print.voronoi}}, \code{\link{plot.voronoi}},
   \code{\link{print.summary.voronoi}}. 
 }
-\keyword{}
+<<<<<<< summary.voronoi.Rd
+\keyword{spatial}
+=======
+\keyword{spatial}
+>>>>>>> 1.4

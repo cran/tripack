@@ -46,4 +46,4 @@ routines.
 }
 \seealso{\code{\link{tri.mesh}}, \code{\link{print.tri}}, \code{\link{plot.tri}}, \code{\link{summary.tri}}
 }
-\keyword{}
+\keyword{spatial}

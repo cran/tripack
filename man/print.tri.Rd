@@ -22,4 +22,4 @@
   \code{\link{plot.tri}},
   \code{\link{summary.tri}}
 }
-\keyword{}
+\keyword{spatial}

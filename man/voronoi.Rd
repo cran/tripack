@@ -26,4 +26,5 @@
 }
 \seealso{\code{\link{voronoi.mosaic}},\code{\link{plot.voronoi}}
 }
-\keyword{}
+\keyword{spatial}
+

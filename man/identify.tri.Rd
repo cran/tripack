@@ -21,4 +21,6 @@ tritest.tr<-tri.mesh(tritest$x,tritest$y)
 plot(tritest.tr)
 identify.tri(tritest.tr)
 }
-\keyword{}
+<<<<<<< identify.tri.Rd
+\keyword{spatial}=======
+\keyword{spatial}>>>>>>> 1.2

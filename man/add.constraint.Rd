@@ -84,4 +84,8 @@ tritest.tr <- add.constraint(tritest.tr, c(0.4, 0.4,0.6, 0.6),
                                          reverse = F)
 par(opar)
 }
-\keyword{}
+<<<<<<< add.constraint.Rd
+\keyword{spatial}
+=======
+\keyword{spatial}
+>>>>>>> 1.4

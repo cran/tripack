@@ -22,4 +22,4 @@
   \code{\link{plot.voronoi}},
   \code{\link{summary.voronoi}}
 }
-\keyword{}
+\keyword{spatial}

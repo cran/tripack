@@ -55,4 +55,4 @@ attach(triangle.with.pnt)
 lines(tritest$x[c(i1,i2,i3,i1)],tritest$y[c(i1,i2,i3,i1)],col="red")
 points(pnt$x,pnt$y)
 }
-\keyword{}
+\keyword{spatial}

@@ -28,4 +28,4 @@
   \code{\link{tri}}, \code{\link{print.tri}}, \code{\link{plot.tri}},
   \code{\link{print.summary.tri}}.
 }
-\keyword{}
+\keyword{spatial}

@@ -47,4 +47,8 @@ quakes.tri<-tri.mesh(quakes.part$lon, quakes.part$lat, duplicate="remove")
 plot(quakes.tri)
 convex.hull(quakes.tri, plot.it=T, add=T, col="red")
 }
-\keyword{}
+<<<<<<< convex.hull.Rd
+\keyword{spatial}
+=======
+\keyword{spatial}
+>>>>>>> 1.4

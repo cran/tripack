@@ -39,4 +39,4 @@ plot(quakes.vm)
 # (will not work with standard memory settings, hence commented out here)
 #plot(voronoi.mosaic(quakes$lon, quakes$lat, duplicate="remove"))
 }
-\keyword{}
+\keyword{spatial}

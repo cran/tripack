@@ -53,4 +53,4 @@ data(akima)
 akima.tr<-tri.mesh(akima$x,akima$y)
 triangles(akima.tr)
 }
-\keyword{}
+\keyword{spatial}

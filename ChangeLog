@@ -1,116 +1,88 @@
+2001-06-18  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* INDEX: very last change
+
+	* man/tripack-internal.Rd: last changes
+
+	* DESCRIPTION, R/tri.dellens.R, R/voronoi.area.R, R/voronoi.findrejectsites.R, man/add.constraint.Rd, man/convex.hull.Rd, man/identify.tri.Rd, man/in.convex.hull.Rd, man/neighbours.Rd, man/on.convex.hull.Rd, man/outer.convhull.Rd, man/plot.tri.Rd, man/plot.voronoi.Rd, man/print.summary.tri.Rd, man/print.summary.voronoi.Rd, man/print.tri.Rd, man/print.voronoi.Rd, man/summary.tri.Rd, man/summary.voronoi.Rd, man/tri.Rd, man/tri.dellens.Rd, man/tri.find.Rd, man/tri.mesh.Rd, man/triangles.Rd, man/tripack.internal.Rd, man/voronoi.Rd, man/voronoi.area.Rd, man/voronoi.findrejectsites.Rd, man/voronoi.mosaic.Rd:
+	ready for 1.3, now with polygon statistics from Stephen Eglen
+
 2001-01-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/R/triangles.R, /usr/local/cvsroot/tripack/R/voronoi.mosaic.R, /usr/local/cvsroot/tripack/R/add.constraint.R, /usr/local/cvsroot/tripack/R/convex.hull.R, /usr/local/cvsroot/tripack/R/in.convex.hull.R, /usr/local/cvsroot/tripack/R/neighbours.R, /usr/local/cvsroot/tripack/R/on.convex.hull.R, /usr/local/cvsroot/tripack/R/plot.tri.R, /usr/local/cvsroot/tripack/R/print.tri.R, /usr/local/cvsroot/tripack/R/summary.tri.R, /usr/local/cvsroot/tripack/R/tri.find.R, /usr/local/cvsroot/tripack/R/tri.mesh.R:
+	* R/triangles.R, R/voronoi.mosaic.R, R/add.constraint.R, R/convex.hull.R, R/in.convex.hull.R, R/neighbours.R, R/on.convex.hull.R, R/plot.tri.R, R/print.tri.R, R/summary.tri.R, R/tri.find.R, R/tri.mesh.R:
 	PACKAGE = "tripack" added to all .Fortran calls
-
-2001-01-03  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* /usr/local/cvsroot/tripack/DESCRIPTION: Maintainer field added
 
 2000-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/R/zzz.R, /usr/local/cvsroot/tripack/data/00Index:
-	update to 1.2.0
-
-2000-06-05  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* /usr/local/cvsroot/tripack/man/tri.Rd:
-	 \link{\code{...}} -> \code{\link{...}}
+	* R/zzz.R, data/00Index: update to 1.2.0
 
 2000-06-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/man/tritest.Rd, /usr/local/cvsroot/tripack/INDEX:
-	better documentation entry for tritest
+	* man/tritest.Rd: better documentation entry for tritest
 
-	* /usr/local/cvsroot/tripack/data/index.doc:
-	last changes for R CMD build to succeed
+	* data/index.doc: last changes for R CMD build to succeed
 
 2000-06-03  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/README:
+	* README:
 	Next release for CRAN, passes CMD check with R 1.0.1 and 1.1.0(devel)
 
 2000-05-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/man/add.constraint.Rd:
-	new example for add.constraint
+	* src/troutq.f: modified TRPRINT from Roger
 
-	* /usr/local/cvsroot/tripack/src/troutq.f: modified TRPRINT from Roger
+2000-04-27  Albrecht Gebhardt  <alge@omega.home.algepop.net>
 
-2000-04-27  Kurs 07  <alge@alpha5-stat>
+	* orig/TRIPACK.shar: latest original version of TRIPACK added
 
-	* /usr/local/cvsroot/tripack/orig/TRIPACK.shar:
-	latest original version of TRIPACK added
+2000-03-18  Albrecht Gebhardt  <alge@omega.home.algepop.net>
 
-2000-03-18  Kurs 07  <alge@alpha5-stat>
-
-	* /usr/local/cvsroot/tripack/src/troutp.f, /usr/local/cvsroot/tripack/src/voronoi.f, /usr/local/cvsroot/tripack/src/qsort.f, /usr/local/cvsroot/tripack/src/tripack.f:
+	* src/troutp.f, src/voronoi.f, src/qsort.f, src/tripack.f:
 	new version of tripack, working.
 	errors for small number od points:
 	 maybe because then all triangles are border triangles.
 	 the nodes are no circumcircle centres then! why?
 
-1999-12-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* /usr/local/cvsroot/tripack/man/voronoi.mosaic.Rd, /usr/local/cvsroot/tripack/man/print.voronoi.Rd, /usr/local/cvsroot/tripack/man/plot.voronoi.Rd, /usr/local/cvsroot/tripack/man/plot.tri.Rd, /usr/local/cvsroot/tripack/man/outer.convhull.Rd, /usr/local/cvsroot/tripack/man/on.convex.hull.Rd, /usr/local/cvsroot/tripack/man/in.convex.hull.Rd, /usr/local/cvsroot/tripack/man/convex.hull.Rd:
-	examples corrected so that "R CMD check" succeeds
-
 1999-09-07  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/src/tritest.f, /usr/local/cvsroot/tripack/src/Makefile:
+	* src/tritest.f, src/Makefile:
 	Makefile and standalone examples removed, it prevented tripack.so to
 	be correctly linked (missing references to libg2c on a SuSE system)
 
 1998-08-19  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/src-c/voronoi.c, /usr/local/cvsroot/tripack/src-c/tritest.c, /usr/local/cvsroot/tripack/src-c/tripack.c, /usr/local/cvsroot/tripack/src-c/inhull.c, /usr/local/cvsroot/tripack/src-c/Makefile:
+	* src-c/voronoi.c, src-c/tritest.c, src-c/tripack.c, src-c/inhull.c, src-c/Makefile:
 	src-c tree removed (that means it will now only work with R >= 0.62.x)
-
-1998-07-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* /usr/local/cvsroot/tripack/man/voronoi.Rd: new return value ratio
 
 1998-07-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/R/plot.voronoi.R, /usr/local/cvsroot/tripack/R/print.voronoi.R:
-	do.points parameter added
+	* R/plot.voronoi.R, R/print.voronoi.R: do.points parameter added
 
 1998-07-08  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/src/inhull.f:
-	arrays with variable size removed (problems with f2c)
+	* src/inhull.f: arrays with variable size removed (problems with f2c)
 
 1998-06-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/man/summary.tri.Rd, /usr/local/cvsroot/tripack/man/summary.voronoi.Rd:
-	doc for summary objects
-
-	* /usr/local/cvsroot/tripack/man/print.summary.voronoi.Rd:
-	doc for summary objects 
-
-	* /usr/local/cvsroot/tripack/man/print.summary.tri.Rd:
-	doc for summary objects
-
-	* /usr/local/cvsroot/tripack/R/summary.voronoi.R, /usr/local/cvsroot/tripack/R/print.summary.voronoi.R, /usr/local/cvsroot/tripack/R/print.summary.tri.R:
+	* R/summary.voronoi.R, R/print.summary.voronoi.R, R/print.summary.tri.R:
 	summary objects + print methods added.
 
 1998-06-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/TITLE: new functions for voronoi mosaic
+	* TITLE: new functions for voronoi mosaic
 
 1998-05-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/COPYING: GPL added
+	* COPYING: GPL added
 
-	* /usr/local/cvsroot/tripack/ChangeLog: *** empty log message ***
+	* ChangeLog: *** empty log message ***
 
 1998-05-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/R/outer.convhull.R:
-	additional functions using convex hull
+	* R/outer.convhull.R: additional functions using convex hull
 
 1998-03-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/orig/tripack.bib, /usr/local/cvsroot/tripack/R/identify.tri.R, /usr/local/cvsroot/tripack/data/tritest.R, /usr/local/cvsroot/tripack/man/identify.tri.Rd, /usr/local/cvsroot/tripack/man/neighbours.Rd, /usr/local/cvsroot/tripack/man/print.tri.Rd, /usr/local/cvsroot/tripack/man/tri.find.Rd, /usr/local/cvsroot/tripack/man/tri.mesh.Rd, /usr/local/cvsroot/tripack/man/triangles.Rd, /usr/local/cvsroot/tripack/orig/751, /usr/local/cvsroot/tripack/.cvsignore:
+	* orig/tripack.bib, R/identify.tri.R, data/tritest.R, orig/751, .cvsignore:
 	New file.
 

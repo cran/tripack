@@ -40,4 +40,4 @@ quakes.part<-quakes[(quakes[,1]<=-17 & quakes[,1]>=-19.0 &
 quakes.vm<-voronoi.mosaic(quakes.part$lon, quakes.part$lat, duplicate="remove")
 quakes.vm
 }
-\keyword{}
+\keyword{spatial}

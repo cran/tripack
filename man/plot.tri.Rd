@@ -37,4 +37,4 @@ plot(quakes.tri)
 # (will not work with standard memory settings, hence commented out)
 #plot(tri.mesh(quakes$lon, quakes$lat, duplicate="remove"), do.points=F) 
 }
-\keyword{}
+\keyword{spatial}

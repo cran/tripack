@@ -24,4 +24,8 @@ data(tritest)
 tritest.tr<-tri.mesh(tritest$x,tritest$y)
 tritest.nb<-neighbours(tritest.tr)
 }
-\keyword{}
+<<<<<<< neighbours.Rd
+\keyword{spatial}
+=======
+\keyword{spatial}
+>>>>>>> 1.2

@@ -36,5 +36,5 @@ yg<-seq(0,1,0.05)
 image(xg,yg,outer.convhull(xg,yg,x,y,f.pred))
 points(x,y)
 }
-\keyword{}
+\keyword{spatial}
 
