@@ -1,19 +1,24 @@
-2004-05-26  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2004-09-19  author  <author@omega.home.algepop.dyndns.org>
+
+	* /home/cvsroot/math/stat/R/tripack/DESCRIPTION, /home/cvsroot/math/stat/R/tripack/man/print.summary.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/print.summary.voronoi.Rd, /home/cvsroot/math/stat/R/tripack/man/tri.Rd, /home/cvsroot/math/stat/R/tripack/man/tri.mesh.Rd:
+	corrected man page errors detected by R 2.0.0 alpha
+
+2004-05-26  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/man/triangles.Rd, /home/cvsroot/math/stat/R/tripack/man/tritest.Rd:
 	removed dependency to akima
 
-2004-05-25  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2004-05-25  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/DESCRIPTION, /home/cvsroot/math/stat/R/tripack/INDEX, /home/cvsroot/math/stat/R/tripack/man/cells.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.area.Rd:
+	* /home/cvsroot/math/stat/R/tripack/INDEX, /home/cvsroot/math/stat/R/tripack/man/cells.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.area.Rd:
 	small fixes for R 1.9
 
-2003-09-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2003-09-10  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/R/cells.R:
 	new cell information function for voronoi mosaics
 
-2003-04-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2003-04-01  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/man/plot.voronoi.polygons.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.polygons.Rd:
 	docu
@@ -21,114 +26,114 @@
 	* /home/cvsroot/math/stat/R/tripack/R/plot.voronoi.polygons.R, /home/cvsroot/math/stat/R/tripack/R/voronoi.polygons.R:
 	new polygon extraction functions from Denis White <white.denis@epamail.epa.gov>
 
-2003-01-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2003-01-10  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/src/voronoi.f:
 	applied fix from Roger Koenker <roger@ysidro.econ.uiuc.edu>.
 	fixes segmentation fault on solaris/sparc.
 
-2002-10-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2002-10-13  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/data/00Index, /home/cvsroot/math/stat/R/tripack/man/add.constraint.Rd:
 	keyword change for dataset
 
-2002-07-02  Debian User  <alge@pi.home.algepop.dyndns.org>
+2002-07-02  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/man/tri.dellens.Rd, /home/cvsroot/math/stat/R/tripack/man/convex.hull.Rd:
+	* /home/cvsroot/math/stat/R/tripack/man/convex.hull.Rd, /home/cvsroot/math/stat/R/tripack/man/tri.dellens.Rd:
 	last T -> TRUE fixes
 
-2002-01-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2002-01-04  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/R/plot.tri.R, /home/cvsroot/math/stat/R/tripack/R/plot.voronoi.R, /home/cvsroot/math/stat/R/tripack/man/plot.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/plot.voronoi.Rd:
 	final 1.4.0 corrections
 
-2002-01-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2002-01-01  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/R/add.constraint.R, /home/cvsroot/math/stat/R/tripack/R/convex.hull.R, /home/cvsroot/math/stat/R/tripack/R/tri.mesh.R, /home/cvsroot/math/stat/R/tripack/R/triangles.R, /home/cvsroot/math/stat/R/tripack/R/voronoi.area.R, /home/cvsroot/math/stat/R/tripack/R/voronoi.findrejectsites.R, /home/cvsroot/math/stat/R/tripack/R/voronoi.mosaic.R:
 	checkTnF cleanup
 
-2001-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2001-12-30  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/R/identify.tri.R, /home/cvsroot/math/stat/R/tripack/R/print.summary.tri.R, /home/cvsroot/math/stat/R/tripack/R/print.summary.voronoi.R, /home/cvsroot/math/stat/R/tripack/R/print.tri.R, /home/cvsroot/math/stat/R/tripack/R/print.voronoi.R, /home/cvsroot/math/stat/R/tripack/R/summary.tri.R, /home/cvsroot/math/stat/R/tripack/R/summary.voronoi.R, /home/cvsroot/math/stat/R/tripack/man/identify.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/in.convex.hull.Rd, /home/cvsroot/math/stat/R/tripack/man/neighbours.Rd, /home/cvsroot/math/stat/R/tripack/man/on.convex.hull.Rd, /home/cvsroot/math/stat/R/tripack/man/outer.convhull.Rd, /home/cvsroot/math/stat/R/tripack/man/print.summary.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/print.summary.voronoi.Rd, /home/cvsroot/math/stat/R/tripack/man/print.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/print.voronoi.Rd, /home/cvsroot/math/stat/R/tripack/man/summary.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/summary.voronoi.Rd, /home/cvsroot/math/stat/R/tripack/man/tripack-internal.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.Rd:
+	* /home/cvsroot/math/stat/R/tripack/R/identify.tri.R, /home/cvsroot/math/stat/R/tripack/R/print.summary.tri.R, /home/cvsroot/math/stat/R/tripack/R/print.summary.voronoi.R, /home/cvsroot/math/stat/R/tripack/R/print.tri.R, /home/cvsroot/math/stat/R/tripack/R/print.voronoi.R, /home/cvsroot/math/stat/R/tripack/R/summary.tri.R, /home/cvsroot/math/stat/R/tripack/R/summary.voronoi.R, /home/cvsroot/math/stat/R/tripack/man/identify.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/in.convex.hull.Rd, /home/cvsroot/math/stat/R/tripack/man/neighbours.Rd, /home/cvsroot/math/stat/R/tripack/man/on.convex.hull.Rd, /home/cvsroot/math/stat/R/tripack/man/outer.convhull.Rd, /home/cvsroot/math/stat/R/tripack/man/print.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/print.voronoi.Rd, /home/cvsroot/math/stat/R/tripack/man/summary.tri.Rd, /home/cvsroot/math/stat/R/tripack/man/summary.voronoi.Rd, /home/cvsroot/math/stat/R/tripack/man/tripack-internal.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.Rd:
 	changes for R 1.4.0
 
-2001-08-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2001-08-09  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/R/tri.dellens.R, /home/cvsroot/math/stat/R/tripack/man/tri.Rd, /home/cvsroot/math/stat/R/tripack/man/tri.find.Rd, /home/cvsroot/math/stat/R/tripack/man/tri.mesh.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.findrejectsites.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.mosaic.Rd:
+	* /home/cvsroot/math/stat/R/tripack/R/tri.dellens.R, /home/cvsroot/math/stat/R/tripack/man/tri.find.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.findrejectsites.Rd, /home/cvsroot/math/stat/R/tripack/man/voronoi.mosaic.Rd:
 	cvsroot recovery
 
-2001-01-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2001-01-10  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/R/in.convex.hull.R, /home/cvsroot/math/stat/R/tripack/R/neighbours.R, /home/cvsroot/math/stat/R/tripack/R/on.convex.hull.R, /home/cvsroot/math/stat/R/tripack/R/tri.find.R:
 	PACKAGE = "tripack" added to all .Fortran calls
 
-2000-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-12-30  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/R/zzz.R: update to 1.2.0
 
-2000-06-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-06-04  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/data/index.doc:
 	last changes for R CMD build to succeed
 
-2000-06-03  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-06-03  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/README:
 	Next release for CRAN, passes CMD check with R 1.0.1 and 1.1.0(devel)
 
-2000-05-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-05-30  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/src/troutq.f:
 	modified TRPRINT from Roger
 
-2000-04-27  Debian User  <alge@pi.home.algepop.dyndns.org>
+2000-04-27  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/orig/TRIPACK.shar:
 	latest original version of TRIPACK added
 
-2000-03-18  Debian User  <alge@pi.home.algepop.dyndns.org>
+2000-03-18  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/src/troutp.f, /home/cvsroot/math/stat/R/tripack/src/qsort.f, /home/cvsroot/math/stat/R/tripack/src/tripack.f:
+	* /home/cvsroot/math/stat/R/tripack/src/qsort.f, /home/cvsroot/math/stat/R/tripack/src/tripack.f, /home/cvsroot/math/stat/R/tripack/src/troutp.f:
 	new version of tripack, working.
 	errors for small number od points:
 	 maybe because then all triangles are border triangles.
 	 the nodes are no circumcircle centres then! why?
 
-1999-09-07  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1999-09-07  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/src/tritest.f, /home/cvsroot/math/stat/R/tripack/src/Makefile:
+	* /home/cvsroot/math/stat/R/tripack/src/Makefile, /home/cvsroot/math/stat/R/tripack/src/tritest.f:
 	Makefile and standalone examples removed, it prevented tripack.so to
 	be correctly linked (missing references to libg2c on a SuSE system)
 
-1998-08-19  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-08-19  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/src-c/voronoi.c, /home/cvsroot/math/stat/R/tripack/src-c/tritest.c, /home/cvsroot/math/stat/R/tripack/src-c/tripack.c, /home/cvsroot/math/stat/R/tripack/src-c/inhull.c, /home/cvsroot/math/stat/R/tripack/src-c/Makefile:
+	* /home/cvsroot/math/stat/R/tripack/src-c/voronoi.c, /home/cvsroot/math/stat/R/tripack/src-c/Makefile, /home/cvsroot/math/stat/R/tripack/src-c/inhull.c, /home/cvsroot/math/stat/R/tripack/src-c/tripack.c, /home/cvsroot/math/stat/R/tripack/src-c/tritest.c:
 	src-c tree removed (that means it will now only work with R >= 0.62.x)
 
-1998-07-08  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-07-08  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/src/inhull.f:
 	arrays with variable size removed (problems with f2c)
 
-1998-06-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-06-01  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/TITLE:
 	new functions for voronoi mosaic
 
-1998-05-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-05-24  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/COPYING: GPL added
 
 	* /home/cvsroot/math/stat/R/tripack/ChangeLog:
 	*** empty log message ***
 
-1998-05-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-05-04  author  <author@omega.home.algepop.dyndns.org>
 
 	* /home/cvsroot/math/stat/R/tripack/R/outer.convhull.R:
 	additional functions using convex hull
 
-1998-03-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-03-01  author  <author@omega.home.algepop.dyndns.org>
 
-	* /home/cvsroot/math/stat/R/tripack/orig/tripack.bib, /home/cvsroot/math/stat/R/tripack/data/tritest.R, /home/cvsroot/math/stat/R/tripack/orig/751, /home/cvsroot/math/stat/R/tripack/.cvsignore:
+	* /home/cvsroot/math/stat/R/tripack/.cvsignore, /home/cvsroot/math/stat/R/tripack/data/tritest.R, /home/cvsroot/math/stat/R/tripack/orig/751, /home/cvsroot/math/stat/R/tripack/orig/tripack.bib:
 	New file.
 

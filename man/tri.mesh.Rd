@@ -18,10 +18,7 @@ tri.mesh(x, y = NULL, duplicate = "error")
 }
 \value{
 An object of class \code{"tri"}
-  }
 }
-#\notes{
-#}
 \description{
 
   This subroutine creates a Delaunay triangulation of a

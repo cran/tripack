@@ -2,8 +2,6 @@
 \title{Print a summary of a triangulation object}
 \author{A. Gebhardt}
 \usage{print.summary.tri(x, ...)}
-print(summary(tri.obj))
-}
 \alias{print.summary.tri}
 \arguments{
   \item{x}{object of class \code{"summary.tri"},

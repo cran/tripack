@@ -9,7 +9,7 @@
 \arguments{
   \item{n}{Number of nodes}
   \item{x}{x coordinates of the triangulation nodes}
-  \item{y}{y coordinates of the triangulation nodes}}
+  \item{y}{y coordinates of the triangulation nodes}
   \item{tlist}{Set of nodal indexes which, along with \code{tlptr},
     \code{tlend}, and \code{tlnew}, define the triangulation as a
     set of \eqn{n} adjacency lists -- counterclockwise-ordered sequences of
