@@ -70,14 +70,18 @@ modified circumcircle property).
   \code{\link{tri}}, \code{\link{print.tri}}, \code{\link{plot.tri}}, \code{\link{summary.tri}}, \code{\link{triangles}}, \code{\link{convex.hull}}.
 }
 \examples{
-# we will use the test data from library(akima):
-library(akima)
-data(akima)
-akima.tr<-tri.mesh(akima$x,akima$y)
+# we will use the simple test data from TRIPACK:
+data(tritest)
+tritest.tr<-tri.mesh(tritest)
+opar<-par(mfrow=c(2,2))
+plot(tritest.tr)
 # include all points in a big triangle:
-akima.trc<-add.constraint(akima.tr,c(-30,50,15),c(-10,-10,40),reverse=T)
-par(mfrow=c(1,2))
-plot(akima.tr)
-plot(akima.trc)
+tritest.tr<-add.constraint(tritest.tr,c(-0.1,2,-0.1),
+                                      c(-3,0.5,3),reverse=T)
+# insert a small cube:
+tritest.tr <- add.constraint(tritest.tr, c(0.4, 0.4,0.6, 0.6), 
+                                         c(0.6, 0.4,0.4, 0.6), 
+                                         reverse = F)
+par(opar)
 }
 \keyword{}

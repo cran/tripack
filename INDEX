@@ -1,4 +1,3 @@
-
 add.constraint           Add a constraint to an triangulaion object
 convex.hull              Return the convex hull of a triangulation object
 identify.tri             Identify points in a triangulation plot
@@ -14,7 +13,7 @@ plot.voronoi             Plot a voronoi object
 print.summary.tri        Print a summary of a triangulation object
 print.summary.voronoi    Print a summary of a voronoi object
 print.tri                Print a triangulation object
-print.tri                Print a voronoi object
+print.voronoi            Print a voronoi object
 summary.tri              Return a summary of a triangulation object
 summary.voronoi          Return a summary of a voronoi object
 tri                      A triangulation object
@@ -22,5 +21,6 @@ tri.find                 Locate a point in a triangulation
 tri.mesh                 Create a delaunay triangulation
 triangles                Extract a list of triangle from a triangulation
                          object
+tritest                  tritest / sample data
 voronoi                  Voronoi object
 voronoi.mosaic           Create a Voronoi mosaic

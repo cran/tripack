@@ -39,14 +39,17 @@ tri.mesh <- function(x,y=NULL,duplicate="error")
       stop("duplicate data points")
 
   ans<-.Fortran("trmesh",
-                  as.integer(n),
-                  x=as.double(x1),
-                  y=as.double(y1),
-                  tlist=integer(6*n-12),
-                  tlptr=integer(6*n-12),
-                  tlend=integer(n),
-                  tlnew=as.integer(0),
-                  ier=as.integer(0))
+                as.integer(n),
+                x=as.double(x1),
+                y=as.double(y1),
+                tlist=integer(6*n-12),
+                tlptr=integer(6*n-12),
+                tlend=integer(n),
+                tlnew=as.integer(0),
+                tnear=integer(n),
+                tnext=integer(n),
+                tdist=double(n),
+                ier=as.integer(0))
   if(ans$ier==0)
     {
       tri.obj<-list(n=n,x=x1,y=y1,tlist=ans$tlist,tlptr=ans$tlptr,

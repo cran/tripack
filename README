@@ -74,3 +74,30 @@ The abstract of the original article at ACM follows:
                  13N integer storage locations in addition to the 2N 
                  nodal coordinates.
 
+
+##############################################################################
+
+Meanwhile I got also feedback from the original author, especially regarding 
+the copyright situation:
+##############################################################################
+Albrecht,
+
+I took a quick look at your addition of TRIPACK to R, and it
+looks very nice.  I'm very pleased that you found my code useful.
+
+There is an updated version of TRIPACK available from netlib and
+described in Remark on Algorithm 751, ACM TOMS, Vol 25, No. 1,
+March 1999, pp 97-98.  It adds some capabilities and correcta a
+couple of possible bugs.  A LaTeX file is attached.
+
+I cannot give you a definitive answer to the copyright question.
+The question was still being debated when I was an ACM editor, and
+I have not carefully read the current policy.  There may be a
+requirement that the source code retain the ACM copyright notice
+or something like that.  I suggest that you pose the question to
+the current CALGO EIC, Tim Hopkins (t.r.hopkins@ukc.ac.uk).
+
+Feel free to contact me if you encounter problems in the code.
+
+Robert
+##############################################################################

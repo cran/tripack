@@ -6,6 +6,7 @@ tri.find<-function(tri.obj,x,y)
                  as.integer(1),
                  as.double(x),
                  as.double(y),
+                 as.integer(tri.obj$n),
                  as.double(tri.obj$x),
                  as.double(tri.obj$y),
                  as.integer(tri.obj$tlist),
