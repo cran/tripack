@@ -22,7 +22,7 @@
 \value{Matrix with values of \code{FUN} (\code{NA}s if outside the
   convex hull).
 }
-\seealso{\link{\code{in.convex.hull}}
+\seealso{\code{\link{in.convex.hull}}
 }
 \examples{
 x<-runif(20)
@@ -37,3 +37,4 @@ image(xg,yg,outer.convhull(xg,yg,x,y,f.pred))
 points(x,y)
 }
 \keyword{}
+

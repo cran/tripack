@@ -28,7 +28,7 @@ coincides with the convex hull of the nodes, but triangles
 in R can be distinguished from those outside of R.  The
 only modification required to generalize the definition of
 the Delaunay triangulation is replacement of property 5
-(refer to \link{\code{tri.mesh}} by the following:
+(refer to \code{\link{tri.mesh}} by the following:
 
 5')  If a node is contained in the interior of the circumcircle
 of a triangle, then every interior point

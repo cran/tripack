@@ -1,9 +1,17 @@
-Wed Aug 19 15:39:22 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+Tue Sep  7 07:16:38 1999  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* src/Makefile:
-	all special Fortran compile flags removed. -lf2c removed.
+	* src/Attic/tritest.f, src/Attic/Makefile:
+	Makefile and standalone examples removed, it prevented tripack.so to
+	be correctly linked (missing references to libg2c on a SuSE system)
 
-	* DESCRIPTION: New version-release: 1.0-1
+	* man/outer.convhull.Rd, man/add.constraint.Rd: missing links corrected
+
+	* DESCRIPTION: next release
+
+Wed Aug 19 15:40:30 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* src-c/Attic/voronoi.c, src-c/Attic/tritest.c, src-c/Attic/tripack.c, src-c/Attic/inhull.c, src-c/Attic/Makefile:
+	src-c tree removed (that means it will now only work with R >= 0.62.x)
 
 Tue Jul 21 20:06:17 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -59,13 +67,13 @@ Sun May 24 21:20:14 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* Attic/ChangeLog: *** empty log message ***
 
-Mon May  4 09:53:37 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+Mon May  4 09:53:33 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* man/outer.convhull.Rd, R/in.convex.hull.R, R/outer.convhull.R:
+	* R/in.convex.hull.R, R/outer.convhull.R:
 	additional functions using convex hull
 
 Sun Mar  1 11:01:48 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* orig/tripack.bib, src/tripack.f, src/tritest.f, R/add.constraint.R, R/identify.tri.R, R/neighbours.R, R/print.tri.R, R/tri.find.R, R/tri.mesh.R, data/index.doc, data/tritest.R, man/add.constraint.Rd, man/identify.tri.Rd, man/neighbours.Rd, man/print.tri.Rd, man/tri.Rd, man/tri.find.Rd, man/tri.mesh.Rd, man/triangles.Rd, orig/751, .cvsignore:
+	* orig/tripack.bib, src/tripack.f, R/add.constraint.R, R/identify.tri.R, R/neighbours.R, R/print.tri.R, R/tri.find.R, R/tri.mesh.R, data/index.doc, data/tritest.R, man/identify.tri.Rd, man/neighbours.Rd, man/print.tri.Rd, man/tri.Rd, man/tri.find.Rd, man/tri.mesh.Rd, man/triangles.Rd, orig/751, .cvsignore:
 	Initial revision
 
