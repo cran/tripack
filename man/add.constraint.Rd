@@ -75,11 +75,11 @@ opar<-par(mfrow=c(2,2))
 plot(tritest.tr)
 # include all points in a big triangle:
 tritest.tr<-add.constraint(tritest.tr,c(-0.1,2,-0.1),
-                                      c(-3,0.5,3),reverse=T)
+                                      c(-3,0.5,3),reverse=TRUE)
 # insert a small cube:
 tritest.tr <- add.constraint(tritest.tr, c(0.4, 0.4,0.6, 0.6), 
                                          c(0.6, 0.4,0.4, 0.6), 
-                                         reverse = F)
+                                         reverse = FALSE)
 par(opar)
 }
 \keyword{spatial}

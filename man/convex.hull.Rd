@@ -1,14 +1,14 @@
 \name{convex.hull}
 \title{Return the convex hull of a triangulation object}
 \author{A. Gebhardt}
-\usage{convex.hull(tri.obj, plot.it=F, add=F,...)
+\usage{convex.hull(tri.obj, plot.it=FALSE, add=FALSE,...)
 }
 \alias{convex.hull}
 \arguments{
   \item{tri.obj}{object of class \code{"tri"}}
   \item{plot.it}{logical, if \code{TRUE} the convex hull of
     \code{tri.obj} will be plotted.}
-  \item{add}{logical. if \code{TRUE} (and \code{plot.it=T}), add to
+  \item{add}{logical. if \code{TRUE} (and \code{plot.it=TRUE}), add to
     a current plot.}
   \item{...}{additional plot arguments}
 }
@@ -35,17 +35,17 @@ of the nodes on the boundary of the convex hull.
 # rather simple example from TRIPACK:
 data(tritest)
 tr<-tri.mesh(tritest$x,tritest$y)
-convex.hull(tr,plot.it=T)
+convex.hull(tr,plot.it=TRUE)
 # random points:
 rand.tr<-tri.mesh(runif(10),runif(10))
 plot(rand.tr)
-rand.ch<-convex.hull(rand.tr, plot.it=T, add=T, col="red")
+rand.ch<-convex.hull(rand.tr, plot.it=TRUE, add=TRUE, col="red")
 # use a part of the quakes data set:
 data(quakes)
 quakes.part<-quakes[(quakes[,1]<=-17 & quakes[,1]>=-19.0 &
                      quakes[,2]<=182.0 & quakes[,2]>=180.0),]
 quakes.tri<-tri.mesh(quakes.part$lon, quakes.part$lat, duplicate="remove")
 plot(quakes.tri)
-convex.hull(quakes.tri, plot.it=T, add=T, col="red")
+convex.hull(quakes.tri, plot.it=TRUE, add=TRUE, col="red")
 }
 \keyword{spatial}
