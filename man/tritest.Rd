@@ -12,4 +12,4 @@ from the FORTRAN original.
   ACM Transactions on Mathematical Software.
   \bold{22}, 1-8.
 }
-\keywords{data}
+\keyword{datasets}

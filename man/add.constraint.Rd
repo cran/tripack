@@ -4,7 +4,7 @@
 }
 \alias{add.constraint}
 \usage{
-add.constraint(tri.obj,cstx,csty,reverse=F)
+add.constraint(tri.obj,cstx,csty,reverse=FALSE)
 }
 \arguments{
   \item{tri.obj}{object of class \code{"tri"}}

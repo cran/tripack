@@ -1,9 +1,15 @@
+2002-10-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* data/00Index, man/add.constraint.Rd, man/tritest.Rd:
+	keyword change for dataset
+
+	* DESCRIPTION: R 1.6.0 man page fixes
+
 2002-07-02  Albrecht Gebhardt  <alge@psi.home.algepop.net>
 
-	* data/00Index, INDEX: updates
+	* INDEX: updates
 
-	* man/tri.dellens.Rd, man/convex.hull.Rd, man/add.constraint.Rd, DESCRIPTION:
-	last T -> TRUE fixes
+	* man/tri.dellens.Rd, man/convex.hull.Rd: last T -> TRUE fixes
 
 2002-01-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -35,8 +41,6 @@
 	* R/zzz.R: update to 1.2.0
 
 2000-06-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* man/tritest.Rd: better documentation entry for tritest
 
 	* data/index.doc: last changes for R CMD build to succeed
 
