@@ -1,11 +1,15 @@
+2003-01-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* DESCRIPTION, src/voronoi.f:
+	applied fix from Roger Koenker <roger@ysidro.econ.uiuc.edu>.
+	fixes segmentation fault on solaris/sparc.
+
 2002-10-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* data/00Index, man/add.constraint.Rd, man/tritest.Rd:
 	keyword change for dataset
 
-	* DESCRIPTION: R 1.6.0 man page fixes
-
-2002-07-02  Albrecht Gebhardt  <alge@psi.home.algepop.net>
+2002-07-02  Debian User  <alge@psi.home.algepop.net>
 
 	* INDEX: updates
 
@@ -53,13 +57,13 @@
 
 	* src/troutq.f: modified TRPRINT from Roger
 
-2000-04-27  Albrecht Gebhardt  <alge@psi.home.algepop.net>
+2000-04-27  Debian User  <alge@psi.home.algepop.net>
 
 	* orig/TRIPACK.shar: latest original version of TRIPACK added
 
-2000-03-18  Albrecht Gebhardt  <alge@psi.home.algepop.net>
+2000-03-18  Debian User  <alge@psi.home.algepop.net>
 
-	* src/troutp.f, src/voronoi.f, src/qsort.f, src/tripack.f:
+	* src/troutp.f, src/qsort.f, src/tripack.f:
 	new version of tripack, working.
 	errors for small number od points:
 	 maybe because then all triangles are border triangles.

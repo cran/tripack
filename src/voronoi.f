@@ -35,7 +35,7 @@ C     Modules required by VORONOI:  TRLIST, CIRCUM, QSORT, RMSHNB
 C     DETERMINE ALL CIRCUMCIRCLE CENTERS
       INTEGER NROW, IT, IP(3), NTRI, IT1, IT2
       DOUBLE PRECISION X1, X2, X3, Y1, Y2, Y3, XC, YC, SA, AR, 
-     .     XP(3), YP(3), DEPS
+     .     XP(3), YP(3), DEPS, CR
       LOGICAL RATIO
       
       RATIO = .TRUE.
