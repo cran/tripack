@@ -1,4 +1,4 @@
-\name{print.tri}
+\name{print.voronoi}
 \title{Print a voronoi object}
 \author{A. Gebhardt}
 \usage{print(voronoi.obj)

@@ -2,7 +2,7 @@ add.constraint<-function(tri.obj,cstx,csty,reverse=F)
 {
   if(!inherits(tri.obj,"tri"))
     stop("tri.obj must be of class \"tri\"")
-  nt<-summary(tri.obj,print=F)$nt;
+  nt<-summary(tri.obj)$nt;
   lcst<-length(cstx)
   if(reverse)
     {

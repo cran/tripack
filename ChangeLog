@@ -1,17 +1,19 @@
+Fri Dec 24 14:23:01 1999  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/voronoi.mosaic.Rd, man/print.voronoi.Rd, man/plot.voronoi.Rd, man/plot.tri.Rd, man/outer.convhull.Rd, man/on.convex.hull.Rd, man/in.convex.hull.Rd, man/convex.hull.Rd:
+	examples corrected so that "R CMD check" succeeds
+
+	* R/add.constraint.R: error with summary corrected
+
+	* DESCRIPTION: next release
+
 Tue Sep  7 07:16:38 1999  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* src/Attic/tritest.f, src/Attic/Makefile:
 	Makefile and standalone examples removed, it prevented tripack.so to
 	be correctly linked (missing references to libg2c on a SuSE system)
 
-	* man/outer.convhull.Rd, man/add.constraint.Rd: missing links corrected
-
-	* DESCRIPTION: next release
-
-Wed Aug 19 15:40:30 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* src-c/Attic/voronoi.c, src-c/Attic/tritest.c, src-c/Attic/tripack.c, src-c/Attic/inhull.c, src-c/Attic/Makefile:
-	src-c tree removed (that means it will now only work with R >= 0.62.x)
+	* man/add.constraint.Rd: missing links corrected
 
 Tue Jul 21 20:06:17 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -22,10 +24,7 @@ Tue Jul 21 20:06:17 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 	* R/voronoi.mosaic.R, R/triangles.R:
 	additional removal of triangles at the border
 
-Thu Jul  9 21:55:44 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* man/on.convex.hull.Rd, man/plot.tri.Rd, man/plot.voronoi.Rd, man/voronoi.mosaic.Rd, man/convex.hull.Rd, man/in.convex.hull.Rd:
-	more complex examples added.
+Thu Jul  9 21:55:27 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* R/plot.voronoi.R, R/print.voronoi.R, R/plot.tri.R:
 	do.points parameter added
@@ -57,10 +56,6 @@ Mon Jun  1 21:39:12 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* TITLE: new functions for voronoi mosaic
 
-Sun May 31 00:11:11 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* man/print.voronoi.Rd: functions for Voronoi mosaics added
-
 Sun May 24 21:20:14 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* COPYING: GPL added
@@ -74,6 +69,6 @@ Mon May  4 09:53:33 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 Sun Mar  1 11:01:48 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* orig/tripack.bib, src/tripack.f, R/add.constraint.R, R/identify.tri.R, R/neighbours.R, R/print.tri.R, R/tri.find.R, R/tri.mesh.R, data/index.doc, data/tritest.R, man/identify.tri.Rd, man/neighbours.Rd, man/print.tri.Rd, man/tri.Rd, man/tri.find.Rd, man/tri.mesh.Rd, man/triangles.Rd, orig/751, .cvsignore:
+	* orig/tripack.bib, src/tripack.f, R/identify.tri.R, R/neighbours.R, R/print.tri.R, R/tri.find.R, R/tri.mesh.R, data/index.doc, data/tritest.R, man/identify.tri.Rd, man/neighbours.Rd, man/print.tri.Rd, man/tri.Rd, man/tri.find.Rd, man/tri.mesh.Rd, man/triangles.Rd, orig/751, .cvsignore:
 	Initial revision
 
