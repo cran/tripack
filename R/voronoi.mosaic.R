@@ -73,8 +73,8 @@
                   as.integer(tmptri),
                   ier=as.integer(0),
                  PACKAGE = "tripack")
-    lccc<-matrix(ans$lccc,nt,4,byrow=T)
-    iccc<-matrix(ans$iccc,nt,6,byrow=T)
+    lccc<-matrix(ans$lccc,nt,4,byrow=TRUE)
+    iccc<-matrix(ans$iccc,nt,6,byrow=TRUE)
     ret<-list(x=lccc[,1],
               y=lccc[,2],
               node=(lccc[,3]>0),

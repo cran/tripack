@@ -28,7 +28,7 @@ tri.mesh <- function(x,y=NULL,duplicate="error")
         if(duplicate=="remove")
           ord <- !duplicated(xy)
         if(duplicate=="strip")
-          ord <- (hist(i,plot=F,freq=T,breaks=seq(0.5,max(i)+0.5,1))$counts==1)
+          ord <- (hist(i,plot=FALSE,freq=TRUE,breaks=seq(0.5,max(i)+0.5,1))$counts==1)
         x1 <- x1[ord]
         y1 <- y1[ord]
         n <- length(x1)

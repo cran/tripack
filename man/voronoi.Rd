@@ -23,7 +23,7 @@
 }
 \description{
   An \code{voronoi} object is created with {\code{\link{voronoi.mosaic}}
-}
+}}
 \seealso{\code{\link{voronoi.mosaic}},\code{\link{plot.voronoi}}
 }
 \keyword{spatial}

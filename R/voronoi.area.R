@@ -27,7 +27,7 @@ voronoi.findvertices <- function(site, vor) {
   ## in the Voronoi tesselation.
   
   p <- cbind(vor$p1, vor$p2, vor$p3)
-  a <- which(p == site, arr.ind=T)
+  a <- which(p == site, arr.ind=TRUE)
   vertices <- a[,1]                     #list of the vertice indexes.
   triples <- p[a[,1],]
   triples
@@ -37,7 +37,7 @@ voronoi.findvertices <- function(site, vor) {
   ## than by row, and we want to keep rows together.
   triples <- t(triples)
   pairs <- triples[ which (triples!= site)]
-  m <- matrix(pairs, ncol=2, byrow=T)
+  m <- matrix(pairs, ncol=2, byrow=TRUE)
 
   ## Now go through the list of sites and order the vertices.  We
   ## build up the list of vertices in the vector `orderedvs'.  This
@@ -71,10 +71,10 @@ voronoi.findvertices <- function(site, vor) {
   orderedvs <- integer(30); vnum <- 1
   orderedvs[vnum] <- vertices[1]; vnum <- 1 + vnum
   firstv <- m[1,1];   nextv <- m[1,2]; m[1,] <- -1; #blank 1st row out.
-  looking <- T
+  looking <- TRUE
   while (looking) {
     ##cat(paste("looking for ", nextv, "\n"))
-    t <- which(m == nextv, arr.ind=T)
+    t <- which(m == nextv, arr.ind=TRUE)
     if (length(t) == 0) {               #could check length(t) != 1
       ## cannot compute area...
       vnum <- 1; looking <- FALSE
@@ -85,7 +85,7 @@ voronoi.findvertices <- function(site, vor) {
       othercol <- (3 - t.col)            #switch 1 to 2 and vice-versa.
       nextv <- m[ t.row, othercol]
       m[t.row,] <- -1                    #blank this row out.
-      if (nextv == firstv) looking <- F
+      if (nextv == firstv) looking <- FALSE
     }
   }
 

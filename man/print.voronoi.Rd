@@ -1,13 +1,14 @@
 \name{print.voronoi}
-\title{Print a voronoi object}
+\title{Print a xect}
 \author{A. Gebhardt}
-\usage{print(voronoi.obj)
+\usage{print.voronoi(x,...)
 }
 \alias{print.voronoi}
 \arguments{
-  \item{voronoi.obj}{object of class \code{"voronoi"}}
+  \item{x}{object of class \code{"voronoi"}}
+  \item{...}{additional paramters for \code{print}}
 }
-\description{prints a summary of \code{"voronoi.obj"}
+\description{prints a summary of \code{"x"}
 }
 \value{None
 }

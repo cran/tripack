@@ -1,7 +1,7 @@
-print.summary.voronoi<-function(summ.vo.obj)
+print.summary.voronoi<-function(x,...)
   {
     cat("voronoi mosaic\n")
-    cat("Call:", deparse(summ.vo.obj$call),"\n")
-    cat(summ.vo.obj$nn, "nodes\n")
-    cat(summ.vo.obj$nd, "dummy nodes\n")
+    cat("Call:", deparse(x$call),"\n")
+    cat(x$nn, "nodes\n")
+    cat(x$nd, "dummy nodes\n")
   }

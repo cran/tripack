@@ -1,7 +1,7 @@
-identify.tri<-function(tri.obj)
+identify.tri<-function(x,...)
   {
-    if(!inherits(tri.obj,"tri"))
-      stop("tri.obj must be of class \"tri\"")
-    labels<-paste("(",tri.obj$x,",",tri.obj$y,")", sep ="")
-    identify(tri.obj$x,tri.obj$y,labels=labels)
+    if(!inherits(x,"tri"))
+      stop("x must be of class \"tri\"")
+    labels<-paste("(",x$x,",",x$y,")", sep ="")
+    identify(x$x,x$y,labels=labels)
   }

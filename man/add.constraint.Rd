@@ -15,8 +15,6 @@ add.constraint(tri.obj,cstx,csty,reverse=F)
 }
 \value{
 An new object of class \code{"tri"}.}
-#\notes{
-#}
 \description{
   This subroutine provides for creation of a constrained
 Delaunay triangulation which, in some sense, covers an
@@ -84,8 +82,4 @@ tritest.tr <- add.constraint(tritest.tr, c(0.4, 0.4,0.6, 0.6),
                                          reverse = F)
 par(opar)
 }
-<<<<<<< add.constraint.Rd
 \keyword{spatial}
-=======
-\keyword{spatial}
->>>>>>> 1.4

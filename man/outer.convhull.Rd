@@ -12,6 +12,7 @@
   \item{FUN}{function to be evaluated over the grid}
   \item{duplicate}{indicates what to do with duplicate
     \eqn{(px_i,py_i)} points, default \code{"remove"}.}
+  \item{...}{additional arguments for \code{FUN}}
 }
 \description{This version of \code{outer} evaluates \code{FUN}
   only on that part of the grid \eqn{cx x cy} that is enclosed within

@@ -1,4 +1,4 @@
-convex.hull<-function(tri.obj,plot.it=F, add=F,...)
+convex.hull<-function(tri.obj,plot.it=FALSE, add=FALSE,...)
 {
   if(!inherits(tri.obj,"tri"))
     stop("tri.obj must be of class \"tri\"")

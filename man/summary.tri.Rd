@@ -1,15 +1,16 @@
 \name{summary.tri}
 \title{Return a summary of a triangulation object}
 \author{A. Gebhardt}
-\usage{summary(tri.obj)
+\usage{summary.tri(object,...)
 }
 \alias{summary.tri}
 \arguments{
-  \item{tri.obj}{object of class \code{"tri"}}
+  \item{object}{object of class \code{"tri"}}
+  \item{...}{additional paramters for \code{summary}}
 }
 \description{
   Returns some information (number of nodes, triangles, arcs, boundary
-  nodes and constraints) about \code{tri.obj}.
+  nodes and constraints) about \code{object}.
 }
 \value{An objekt of class \code{"summary.tri"}, to be printed by
   \code{\link{print.summary.tri}}.

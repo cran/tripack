@@ -11,7 +11,7 @@ voronoi.findrejectsites <- function(voronoi.obj, xmin, xmax, ymin, ymax)
 
 
   ## In the list below, each site could be rejected more than once.
-  rejects[c(voronoi.obj$p1[outsiders], voronoi.obj$p2[outsiders], voronoi.obj$p3[outsiders])] <- T;
+  rejects[c(voronoi.obj$p1[outsiders], voronoi.obj$p2[outsiders], voronoi.obj$p3[outsiders])] <- TRUE;
 
   rejects
 }

@@ -1,16 +1,21 @@
 \name{plot.voronoi}
-\title{Plot a voronoi object}
+\title{Plot a xect}
 \author{A. Gebhardt}
-\usage{plot(voronoi.obj, add=FALSE, do.points=T...)
+\usage{plot.voronoi(x, ..., add=FALSE, xlim=c(min(x$tri$x)-0.1*diff(range(x$tri$x)),   ylim=c(min(x$tri$y)-0.1*diff(range(x$tri$y)),max(x$tri$y)+0.1*diff(range(x$tri$y))),all=FALSE,do.points=TRUE,main="Voronoi mosaic",sub=deparse(substitute(x))
+)
 }
 \alias{plot.voronoi}
 \arguments{
-  \item{voronoi.obj}{object of class \code{"voronoi"}}
+  \item{x}{object of class \code{"voronoi"}}
   \item{add}{logical, if \code{TRUE}, add to a current plot.}
   \item{do.points}{logical, indicates if points should be plotted.}
+  \item{xlim,ylim}{x/y plot ranges, by default modified to hide dummy 
+        points outside of the plot}
+  \item{all}{show all (including dummy points in the plot}
+  \item{main,sub}{plot titles}
   \item{...}{additional plot parameters}
 }
-\description{Plots the mosaic \code{"voronoi.obj"}.
+\description{Plots the mosaic \code{"x"}.
 
   Dashed lines are used for outer tiles of the mosaic.
 }

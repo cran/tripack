@@ -1,10 +1,10 @@
-summary.voronoi<-function(voronoi.obj)
+summary.voronoi<-function(object,...)
 {
-  if(!inherits(voronoi.obj,"voronoi"))
-    stop("voronoi.obj must be of class \"voronoi\"")
-  ans<-list(nn=length(voronoi.obj$x),
-            nd=length(voronoi.obj$dummy.x),
-            call=voronoi.obj$call)
+  if(!inherits(object,"voronoi"))
+    stop("object must be of class \"voronoi\"")
+  ans<-list(nn=length(object$x),
+            nd=length(object$dummy.x),
+            call=object$call)
   class(ans)<-"summary.voronoi"
   ans
 }

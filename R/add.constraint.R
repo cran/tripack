@@ -1,4 +1,4 @@
-add.constraint<-function(tri.obj,cstx,csty,reverse=F)
+add.constraint<-function(tri.obj,cstx,csty,reverse=FALSE)
 {
   if(!inherits(tri.obj,"tri"))
     stop("tri.obj must be of class \"tri\"")
@@ -60,7 +60,7 @@ add.constraint<-function(tri.obj,cstx,csty,reverse=F)
              stop("working array to small"),
              stop("invalid triangulation or collinear nodes on convex hull"),
              stop("intersecting constraint arcs"),
-             stop("constraint region contains a node\nmay be you should try \"reverse=T\" to invert the orientation \nof the constraint boundary"),
+             stop("constraint region contains a node\nmay be you should try \"reverse=TRUE\" to invert the orientation \nof the constraint boundary"),
              )
       stop(paste("error",ans$ier,"in addcst"))
     }

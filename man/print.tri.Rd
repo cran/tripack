@@ -1,13 +1,14 @@
 \name{print.tri}
 \title{Print a triangulation object}
 \author{A. Gebhardt}
-\usage{print(tri.obj)
+\usage{print.tri(x,...)
 }
 \alias{print.tri}
 \arguments{
-  \item{tri.obj}{object of class \code{"tri"}}
+  \item{x}{object of class \code{"tri"}}
+  \item{...}{additional paramters for \code{print}}
 }
-\description{prints a adjacency list of \code{"tri.obj"}
+\description{prints a adjacency list of \code{"x"}
 }
 \value{None
 }

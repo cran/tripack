@@ -1,14 +1,15 @@
 \name{summary.voronoi}
-\title{Return a summary of a voronoi object}
+\title{Return a summary of a objectect}
 \author{A. Gebhardt}
-\usage{summary(voronoi.obj)
+\usage{summary.voronoi(object,...)
 }
 \alias{summary.voronoi}
 \arguments{
-  \item{voronoi.obj}{object of class \code{"voronoi"}}
+  \item{object}{object of class \code{"voronoi"}}
+  \item{...}{additional paramters for \code{summary}}
 }
 \description{
-  Returns some information about \code{voronoi.obj}
+  Returns some information about \code{object}
 }
 \value{Object of class \code{"summary.voronoi"}.
 
@@ -25,8 +26,4 @@
   \code{\link{print.voronoi}}, \code{\link{plot.voronoi}},
   \code{\link{print.summary.voronoi}}. 
 }
-<<<<<<< summary.voronoi.Rd
 \keyword{spatial}
-=======
-\keyword{spatial}
->>>>>>> 1.4

@@ -1,22 +1,22 @@
-plot.tri<-function(tri.obj,add=F,xlim=range(tri.obj$x),
-                   ylim=range(tri.obj$y),do.points=T,...)
+plot.tri<-function(x,...,add=FALSE,xlim=range(x$x),
+                   ylim=range(x$y),do.points=TRUE)
 {
-  if(!inherits(tri.obj,"tri"))
-    stop("tri.obj must be of class \"tri\"")
-  tnabor<- integer(tri.obj$tlnew)
-  nnabs <- integer(tri.obj$n)
-  nptr <- integer(tri.obj$n)
-  nptr1 <- integer(tri.obj$n)
-  nbnos <- integer(tri.obj$n)
+  if(!inherits(x,"tri"))
+    stop("x must be of class \"tri\"")
+  tnabor<- integer(x$tlnew)
+  nnabs <- integer(x$n)
+  nptr <- integer(x$n)
+  nptr1 <- integer(x$n)
+  nbnos <- integer(x$n)
   ans<-.Fortran("troutq",
-                 as.integer(tri.obj$nc),
-                 as.integer(tri.obj$lc),
-                 as.integer(tri.obj$n),
-                 as.double(tri.obj$x),
-                 as.double(tri.obj$y),
-                 as.integer(tri.obj$tlist),
-                 as.integer(tri.obj$tlptr),
-                 as.integer(tri.obj$tlend),
+                 as.integer(x$nc),
+                 as.integer(x$lc),
+                 as.integer(x$n),
+                 as.double(x$x),
+                 as.double(x$y),
+                 as.integer(x$tlist),
+                 as.integer(x$tlptr),
+                 as.integer(x$tlend),
                  as.integer(6),
                  nnabs=as.integer(nnabs),
                  nptr=as.integer(nptr),
@@ -32,12 +32,12 @@ plot.tri<-function(tri.obj,add=F,xlim=range(tri.obj$x),
       plot.new()
       plot.window(xlim=xlim,ylim=ylim,"")
     }
-  for (i in 1:tri.obj$n)
+  for (i in 1:x$n)
     {
       inb<-ans$tnabor[ans$nptr[i]:ans$nptr1[i]]
       for (j in inb)
-        lines(c(tri.obj$x[i],tri.obj$x[j]),c(tri.obj$y[i],tri.obj$y[j]), ...)
+        lines(c(x$x[i],x$x[j]),c(x$y[i],x$y[j]), ...)
     }
-  if(do.points) points(tri.obj$x,tri.obj$y)
-  if(!add) title("Delaunay triangulation",deparse(substitute(tri.obj)))
+  if(do.points) points(x$x,x$y)
+  if(!add) title("Delaunay triangulation",deparse(substitute(x)))
 }

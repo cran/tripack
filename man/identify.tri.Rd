@@ -1,14 +1,15 @@
 \name{identify.tri}
 \title{Identify points in a triangulation plot}
 \author{A. Gebhardt}
-\usage{identify.tri(tri.obj)
+\usage{identify.tri(x,...)
 }
 \alias{identify.tri}
 \arguments{
-  \item{tri.obj}{object of class \code{"tri"}}
+  \item{x}{object of class \code{"tri"}}
+  \item{...}{additional paramters for \code{identify}}
 }
-\description{Identify points in a plot of \code{"tri.obj"} with its
-  coordinates. The plot of \code{"tri.obj"} must be generated with \code{plot.tri}.
+\description{Identify points in a plot of \code{"x"} with its
+  coordinates. The plot of \code{"x"} must be generated with \code{plot.tri}.
 }
 \value{an integer vector containing the indexes of the identified points.
 }
@@ -21,6 +22,4 @@ tritest.tr<-tri.mesh(tritest$x,tritest$y)
 plot(tritest.tr)
 identify.tri(tritest.tr)
 }
-<<<<<<< identify.tri.Rd
-\keyword{spatial}=======
-\keyword{spatial}>>>>>>> 1.2
+\keyword{spatial}

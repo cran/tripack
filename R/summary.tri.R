@@ -1,21 +1,21 @@
-summary.tri<-function(tri.obj, print=F)
+summary.tri<-function(object, ...)
 {
-  if(!inherits(tri.obj,"tri"))
-    stop("tri.obj must be of class \"tri\"")
-  tnabor<- integer(tri.obj$tlnew)
-  nnabs <- integer(tri.obj$n)
-  nptr <- integer(tri.obj$n)
-  nptr1 <- integer(tri.obj$n)
-  nbnos <- integer(tri.obj$n)
+  if(!inherits(object,"tri"))
+    stop("object must be of class \"tri\"")
+  tnabor<- integer(object$tlnew)
+  nnabs <- integer(object$n)
+  nptr <- integer(object$n)
+  nptr1 <- integer(object$n)
+  nbnos <- integer(object$n)
   ans<-.Fortran("troutq",
-                 as.integer(tri.obj$nc),
-                 as.integer(tri.obj$lc),
-                 as.integer(tri.obj$n),
-                 as.double(tri.obj$x),
-                 as.double(tri.obj$y),
-                 as.integer(tri.obj$tlist),
-                 as.integer(tri.obj$tlptr),
-                 as.integer(tri.obj$tlend),
+                 as.integer(object$nc),
+                 as.integer(object$lc),
+                 as.integer(object$n),
+                 as.double(object$x),
+                 as.double(object$y),
+                 as.integer(object$tlist),
+                 as.integer(object$tlptr),
+                 as.integer(object$tlend),
                  as.integer(6),
                  nnabs=as.integer(nnabs),
                  nptr=as.integer(nptr),
@@ -26,12 +26,12 @@ summary.tri<-function(tri.obj, print=F)
                  nb=as.integer(0),
                  nt=as.integer(0),
                  PACKAGE = "tripack")
-  ans<-list(n=tri.obj$n,
+  ans<-list(n=object$n,
             na=ans$na,
             nb=ans$nb,
             nt=ans$nt,
-            nc=tri.obj$nc,
-            call=tri.obj$call)
+            nc=object$nc,
+            call=object$call)
   class(ans)<-"summary.tri"
   ans
 }

@@ -43,8 +43,4 @@ quakes.part<-quakes[(quakes[,1]<=-10.78 & quakes[,1]>=-19.4 &
 q.tri<-tri.mesh(quakes.part$lon, quakes.part$lat, duplicate="remove")
 on.convex.hull(q.tri,quakes.part$lon[1:20],quakes.part$lat[1:20])
 }
-<<<<<<< on.convex.hull.Rd
 \keyword{spatial}
-=======
-\keyword{spatial}
->>>>>>> 1.4

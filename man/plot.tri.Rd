@@ -1,16 +1,17 @@
 \name{plot.tri}
 \title{Plot a triangulation object}
 \author{A. Gebhardt}
-\usage{plot(tri.obj, add=FALSE, do.points=T, ...)
+\usage{plot.tri(x, ..., add=FALSE,xlim=range(x$x),ylim=range(x$y), do.points=TRUE)
 }
 \alias{plot.tri}
 \arguments{
-  \item{tri.obj}{object of class \code{"tri"}}
+  \item{x}{object of class \code{"tri"}}
   \item{add}{logical, if \code{TRUE}, add to a current plot.}
   \item{do.points}{logical, indicates if points should be plotted.}
+  \item{xlim,ylim}{x/y ranges for plot}
   \item{...}{additional plot parameters}
 }
-\description{plots the triangulation \code{"tri.obj"}
+\description{plots the triangulation \code{"x"}
 }
 \value{None
 }

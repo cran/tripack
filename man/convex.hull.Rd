@@ -10,6 +10,7 @@
     \code{tri.obj} will be plotted.}
   \item{add}{logical. if \code{TRUE} (and \code{plot.it=T}), add to
     a current plot.}
+  \item{...}{additional plot arguments}
 }
 \description{
 Given a triangulation \code{tri.obj} of \eqn{n} points in the plane, this
@@ -47,8 +48,4 @@ quakes.tri<-tri.mesh(quakes.part$lon, quakes.part$lat, duplicate="remove")
 plot(quakes.tri)
 convex.hull(quakes.tri, plot.it=T, add=T, col="red")
 }
-<<<<<<< convex.hull.Rd
 \keyword{spatial}
-=======
-\keyword{spatial}
->>>>>>> 1.4
