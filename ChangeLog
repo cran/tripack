@@ -1,0 +1,71 @@
+Wed Aug 19 15:39:22 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* src/Makefile:
+	all special Fortran compile flags removed. -lf2c removed.
+
+	* DESCRIPTION: New version-release: 1.0-1
+
+Tue Jul 21 20:06:17 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* src/voronoi.f: additional removal of triangles at the border
+
+	* man/voronoi.Rd: new return value ratio
+
+	* R/voronoi.mosaic.R, R/triangles.R:
+	additional removal of triangles at the border
+
+Thu Jul  9 21:55:44 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/on.convex.hull.Rd, man/plot.tri.Rd, man/plot.voronoi.Rd, man/voronoi.mosaic.Rd, man/convex.hull.Rd, man/in.convex.hull.Rd:
+	more complex examples added.
+
+	* R/plot.voronoi.R, R/print.voronoi.R, R/plot.tri.R:
+	do.points parameter added
+
+	* README: updated
+
+Wed Jul  8 14:52:11 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* src/inhull.f: arrays with variable size removed (problems with f2c)
+
+Sun Jun 21 14:07:24 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/summary.tri.Rd, man/summary.voronoi.Rd: doc for summary objects
+
+	* man/print.summary.voronoi.Rd: doc for summary objects 
+
+	* man/print.summary.tri.Rd: doc for summary objects
+
+	* INDEX: updated
+
+	* R/zzz.R, R/summary.voronoi.R, R/print.summary.voronoi.R, R/summary.tri.R, R/print.summary.tri.R:
+	summary objects + print methods added.
+
+Mon Jun  1 21:39:12 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* R/convex.hull.R, R/on.convex.hull.R:
+	new functions for voronoi mosaic corrected.
+	Plots should now work at the border.
+
+	* TITLE: new functions for voronoi mosaic
+
+Sun May 31 00:11:11 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/print.voronoi.Rd: functions for Voronoi mosaics added
+
+Sun May 24 21:20:14 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* COPYING: GPL added
+
+	* Attic/ChangeLog: *** empty log message ***
+
+Mon May  4 09:53:37 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/outer.convhull.Rd, R/in.convex.hull.R, R/outer.convhull.R:
+	additional functions using convex hull
+
+Sun Mar  1 11:01:48 1998  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* orig/tripack.bib, src/tripack.f, src/tritest.f, R/add.constraint.R, R/identify.tri.R, R/neighbours.R, R/print.tri.R, R/tri.find.R, R/tri.mesh.R, data/index.doc, data/tritest.R, man/add.constraint.Rd, man/identify.tri.Rd, man/neighbours.Rd, man/print.tri.Rd, man/tri.Rd, man/tri.find.Rd, man/tri.mesh.Rd, man/triangles.Rd, orig/751, .cvsignore:
+	Initial revision
+

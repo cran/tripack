@@ -1,0 +1,76 @@
+This library contains an R implementation of some triangulation routines.  
+
+It is based on Fortran code from R. J. Renka in the ACM Collected 
+Algorithms archive under
+
+  http://www.netlib.org/toms/751
+
+  R. J. Renka (1996). Algorithm 751: TRIPACK: a constrained
+  two-dimensional {Delaunay} triangulation package.
+  ACM Transactions on Mathematical Software.
+  22, 1-8.
+
+I added the Fortran files inhull.f and voronoi.f wich implements additional
+subroutines for determination of convex hulls and voronoi mosaics.
+
+Currently the library  contains the following R functions which provide access
+to the Fortran subroutines of TRIPACK and implements new objects for triangu-
+lations and voronoi mosaics:
+
+add.constraint           
+convex.hull             
+identify.tri           
+in.convex.hull        
+neighbours          
+on.convex.hull     
+outer.convhull   
+plot.tri       
+plot.voronoi  
+print.summary.tri        
+print.summary.voronoi   
+print.tri              
+print.tri            
+summary.tri         
+summary.voronoi    
+tri               
+tri.find         
+tri.mesh        
+triangles      
+voronoi      
+voronoi.mosaic
+
+The help pages are based on the Fortran comments. 
+
+This library was intended by the akima library, which also contains some (but 
+not all) of the TRIPACK functions. 
+
+Currently plots of voronoi mosaics may fail (due to numerical problems) if 
+the corresponding triangulation contains very small triangles at the boundary.
+
+------------------------------------------------------------------
+Albrecht Gebhardt           email: albrecht.gebhardt@uni-klu.ac.at
+Institut fuer Mathematik    Tel. : (++43 463) 2700/837
+Universitaet Klagenfurt     Fax  : (++43 463) 2700/834
+Villacher Str. 161
+A-9020 Klagenfurt, Austria
+------------------------------------------------------------------
+
+The abstract of the original article at ACM follows:
+##############################################################################
+                 TRIPACK is a Fortran 77 software package that employs
+                 an incremental algorithm to construct a constrained
+                 Delaunay triangulation of a set of points in the plane
+                 (nodes). The triangulation covers the convex hull of
+                 the nodes but may include polygonal constraint regions
+                 whose triangles are distinguishable from those in the
+                 remainder of the triangulation. This effectively allows
+                 for a nonconvex or multiply connected triangulation
+                 (the complement of the union of constraint regions)
+                 while retaining the efficiency of searching and
+                 updating a convex triangulation. The package provides a
+                 wide range of capabilities including an efficient means
+                 of updating the triangulation with nodal additions or
+                 deletions. For N  nodes, the storage requirement is
+                 13N integer storage locations in addition to the 2N 
+                 nodal coordinates.
+
