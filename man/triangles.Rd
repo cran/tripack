@@ -47,10 +47,9 @@
 \seealso{\code{\link{tri}}, \code{\link{print.tri}}, \code{\link{plot.tri}}, \code{\link{summary.tri}}, \code{\link{triangles}}
 }
 \examples{
-# we will use the test data from library(akima):
-library(akima)
-data(akima)
-akima.tr<-tri.mesh(akima$x,akima$y)
-triangles(akima.tr)
+# use a slighlty modified version of data(tritest)
+data(tritest2)
+tritest2.tr<-tri.mesh(tritest2$x,tritest2$y)
+triangles(tritest2.tr)
 }
 \keyword{spatial}
