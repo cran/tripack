@@ -1,5 +1,5 @@
-plot.tri<-function(x,...,add=FALSE,xlim=range(x$x),
-                   ylim=range(x$y),do.points=TRUE)
+plot.tri<-function(x,add=FALSE,xlim=range(x$x),
+                   ylim=range(x$y),do.points=TRUE,...)
 {
   if(!inherits(x,"tri"))
     stop("x must be of class \"tri\"")

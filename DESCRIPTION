@@ -1,5 +1,5 @@
 Package: tripack
-Version: 1.2-2
+Version: 1.2-3
 Title: Triangulation of irregularly spaced data
 Author: Fortran code by R. J. Renka.
         R functions by Albrecht Gebhardt <albrecht.gebhardt@uni-klu.ac.at>.

@@ -1,6 +1,13 @@
+2002-01-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* /usr/local/cvsroot/tripack/DESCRIPTION: next release
+
+	* /usr/local/cvsroot/tripack/R/plot.tri.R, /usr/local/cvsroot/tripack/R/plot.voronoi.R, /usr/local/cvsroot/tripack/man/plot.tri.Rd, /usr/local/cvsroot/tripack/man/plot.voronoi.Rd:
+	final 1.4.0 corrections
+
 2002-01-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* /usr/local/cvsroot/tripack/DESCRIPTION, /usr/local/cvsroot/tripack/R/add.constraint.R, /usr/local/cvsroot/tripack/R/convex.hull.R, /usr/local/cvsroot/tripack/R/tri.mesh.R, /usr/local/cvsroot/tripack/R/triangles.R, /usr/local/cvsroot/tripack/R/voronoi.area.R, /usr/local/cvsroot/tripack/R/voronoi.findrejectsites.R, /usr/local/cvsroot/tripack/R/voronoi.mosaic.R:
+	* /usr/local/cvsroot/tripack/R/add.constraint.R, /usr/local/cvsroot/tripack/R/convex.hull.R, /usr/local/cvsroot/tripack/R/tri.mesh.R, /usr/local/cvsroot/tripack/R/triangles.R, /usr/local/cvsroot/tripack/R/voronoi.area.R, /usr/local/cvsroot/tripack/R/voronoi.findrejectsites.R, /usr/local/cvsroot/tripack/R/voronoi.mosaic.R:
 	checkTnF cleanup
 
 2001-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
@@ -8,7 +15,7 @@
 	* /usr/local/cvsroot/tripack/INDEX, /usr/local/cvsroot/tripack/data/00Index:
 	R CMD build --foce changes
 
-	* /usr/local/cvsroot/tripack/R/identify.tri.R, /usr/local/cvsroot/tripack/R/plot.tri.R, /usr/local/cvsroot/tripack/R/plot.voronoi.R, /usr/local/cvsroot/tripack/R/print.summary.tri.R, /usr/local/cvsroot/tripack/R/print.summary.voronoi.R, /usr/local/cvsroot/tripack/R/print.tri.R, /usr/local/cvsroot/tripack/R/print.voronoi.R, /usr/local/cvsroot/tripack/R/summary.tri.R, /usr/local/cvsroot/tripack/R/summary.voronoi.R, /usr/local/cvsroot/tripack/man/add.constraint.Rd, /usr/local/cvsroot/tripack/man/convex.hull.Rd, /usr/local/cvsroot/tripack/man/identify.tri.Rd, /usr/local/cvsroot/tripack/man/in.convex.hull.Rd, /usr/local/cvsroot/tripack/man/neighbours.Rd, /usr/local/cvsroot/tripack/man/on.convex.hull.Rd, /usr/local/cvsroot/tripack/man/outer.convhull.Rd, /usr/local/cvsroot/tripack/man/plot.tri.Rd, /usr/local/cvsroot/tripack/man/plot.voronoi.Rd, /usr/local/cvsroot/tripack/man/print.summary.tri.Rd, /usr/local/cvsroot/tripack/man/print.summary.voronoi.Rd, /usr/local/cvsroot/tripack/man/print.tri.Rd, /usr/local/cvsroot/tripack/man/print.voronoi.Rd, /usr/local/cvsroot/tripack/man/summary.tri.Rd, /usr/local/cvsroot/tripack/man/summary.voronoi.Rd, /usr/local/cvsroot/tripack/man/tripack-internal.Rd, /usr/local/cvsroot/tripack/man/voronoi.Rd:
+	* /usr/local/cvsroot/tripack/R/identify.tri.R, /usr/local/cvsroot/tripack/R/print.summary.tri.R, /usr/local/cvsroot/tripack/R/print.summary.voronoi.R, /usr/local/cvsroot/tripack/R/print.tri.R, /usr/local/cvsroot/tripack/R/print.voronoi.R, /usr/local/cvsroot/tripack/R/summary.tri.R, /usr/local/cvsroot/tripack/R/summary.voronoi.R, /usr/local/cvsroot/tripack/man/add.constraint.Rd, /usr/local/cvsroot/tripack/man/convex.hull.Rd, /usr/local/cvsroot/tripack/man/identify.tri.Rd, /usr/local/cvsroot/tripack/man/in.convex.hull.Rd, /usr/local/cvsroot/tripack/man/neighbours.Rd, /usr/local/cvsroot/tripack/man/on.convex.hull.Rd, /usr/local/cvsroot/tripack/man/outer.convhull.Rd, /usr/local/cvsroot/tripack/man/print.summary.tri.Rd, /usr/local/cvsroot/tripack/man/print.summary.voronoi.Rd, /usr/local/cvsroot/tripack/man/print.tri.Rd, /usr/local/cvsroot/tripack/man/print.voronoi.Rd, /usr/local/cvsroot/tripack/man/summary.tri.Rd, /usr/local/cvsroot/tripack/man/summary.voronoi.Rd, /usr/local/cvsroot/tripack/man/tripack-internal.Rd, /usr/local/cvsroot/tripack/man/voronoi.Rd:
 	changes for R 1.4.0
 
 2001-08-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>

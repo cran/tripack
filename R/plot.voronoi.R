@@ -1,4 +1,4 @@
-"plot.voronoi" <- function(x,...,add=FALSE,
+"plot.voronoi" <- function(x,add=FALSE,
                            xlim=c(min(x$tri$x)-
                              0.1*diff(range(x$tri$x)),
                              max(x$tri$x)+
@@ -10,8 +10,8 @@
                            all=FALSE,
                            do.points=TRUE,
                            main="Voronoi mosaic",
-                           sub=deparse(substitute(x))
-                           )
+                           sub=deparse(substitute(x)),
+                           ...)
   {
 
     

@@ -1,7 +1,7 @@
 \name{plot.tri}
 \title{Plot a triangulation object}
 \author{A. Gebhardt}
-\usage{plot.tri(x, ..., add=FALSE,xlim=range(x$x),ylim=range(x$y), do.points=TRUE)
+\usage{plot.tri(x, add=FALSE,xlim=range(x$x),ylim=range(x$y), do.points=TRUE, ...)
 }
 \alias{plot.tri}
 \arguments{
