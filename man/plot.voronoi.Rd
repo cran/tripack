@@ -1,7 +1,7 @@
 \name{plot.voronoi}
 \title{Plot a xect}
 \author{A. Gebhardt}
-\usage{plot.voronoi(x, add=FALSE, xlim=c(min(x$tri$x)-0.1*diff(range(x$tri$x)), max(x$tri$x) + 0.1 *diff(range(x$tri$x))),   ylim=c(min(x$tri$y)-0.1*diff(range(x$tri$y)),max(x$tri$y)+0.1*diff(range(x$tri$y))),all=FALSE,do.points=TRUE,main="Voronoi mosaic",sub=deparse(substitute(x)), ...)
+\usage{\method{plot}{voronoi}(x, add=FALSE, xlim=c(min(x$tri$x)-0.1*diff(range(x$tri$x)), max(x$tri$x) + 0.1 *diff(range(x$tri$x))),   ylim=c(min(x$tri$y)-0.1*diff(range(x$tri$y)),max(x$tri$y)+0.1*diff(range(x$tri$y))),all=FALSE,do.points=TRUE,main="Voronoi mosaic",sub=deparse(substitute(x)), ...)
 }
 \alias{plot.voronoi}
 \arguments{

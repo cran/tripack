@@ -1,7 +1,7 @@
 \name{print.voronoi}
 \title{Print a xect}
 \author{A. Gebhardt}
-\usage{print.voronoi(x,...)
+\usage{\method{print}{voronoi}(x,...)
 }
 \alias{print.voronoi}
 \arguments{

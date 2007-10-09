@@ -1,7 +1,7 @@
 \name{summary.tri}
 \title{Return a summary of a triangulation object}
 \author{A. Gebhardt}
-\usage{summary.tri(object,...)
+\usage{\method{summary}{tri}(object,...)
 }
 \alias{summary.tri}
 \arguments{

@@ -1,7 +1,7 @@
 \name{summary.voronoi}
 \title{Return a summary of a objectect}
 \author{A. Gebhardt}
-\usage{summary.voronoi(object,...)
+\usage{\method{summary}{voronoi}(object,...)
 }
 \alias{summary.voronoi}
 \arguments{

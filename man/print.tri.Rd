@@ -1,7 +1,7 @@
 \name{print.tri}
 \title{Print a triangulation object}
 \author{A. Gebhardt}
-\usage{print.tri(x,...)
+\usage{\method{print}{tri}(x,...)
 }
 \alias{print.tri}
 \arguments{

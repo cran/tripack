@@ -1,7 +1,7 @@
 \name{print.summary.voronoi}
 \title{Print a summary of a voronoi object}
 \author{A. Gebhardt}
-\usage{print.summary.voronoi(x, ...)}
+\usage{\method{print}{summary.voronoi}(x, ...)}
 \alias{print.summary.voronoi}
 \arguments{
   \item{x}{object of class \code{"summary.voronoi"},

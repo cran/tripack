@@ -6,7 +6,7 @@
   plots an \code{voronoi.polygons} object
 }
 \usage{
-plot.voronoi.polygons(x, which, color=TRUE, ...)
+\method{plot}{voronoi.polygons}(x, which, color=TRUE, ...)
 }
 %- maybe also `usage' for other objects documented here.
 \arguments{

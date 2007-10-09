@@ -20,11 +20,11 @@ print.voronoi           Print a xect
 summary.tri             Return a summary of a triangulation object
 summary.voronoi         Return a summary of a objectect
 tri                     A triangulation object
+triangles               Extract a list of triangle from a triangulation
+                        object
 tri.dellens             Compute the Delaunay segment lengths
 tri.find                Locate a point in a triangulation
 tri.mesh                Create a delaunay triangulation
-triangles               Extract a list of triangle from a
-                        triangulation object
 tritest                 tritest / sample data
 voronoi                 Voronoi object
 voronoi.area            Calculate area of Voronoi polygons

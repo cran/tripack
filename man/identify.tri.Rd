@@ -1,7 +1,7 @@
 \name{identify.tri}
 \title{Identify points in a triangulation plot}
 \author{A. Gebhardt}
-\usage{identify.tri(x,...)
+\usage{\method{identify}{tri}(x,...)
 }
 \alias{identify.tri}
 \arguments{

@@ -1,7 +1,6 @@
 \name{tritest}
 \alias{tritest}
 \alias{tritest2}
-\non_function{}
 \title{ tritest / sample data }
 \description{
 A very simply set set of points to test the tripack functions, taken

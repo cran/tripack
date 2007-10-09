@@ -1,7 +1,7 @@
 \name{print.summary.tri}
 \title{Print a summary of a triangulation object}
 \author{A. Gebhardt}
-\usage{print.summary.tri(x, ...)}
+\usage{\method{print}{summary.tri}(x, ...)}
 \alias{print.summary.tri}
 \arguments{
   \item{x}{object of class \code{"summary.tri"},
