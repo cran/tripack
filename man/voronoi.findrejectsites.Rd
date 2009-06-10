@@ -15,7 +15,7 @@
 \description{Find the sites in the Voronoi tesselation that lie at the
   edge of the region.  A site is at the edge if any of the vertices of
   its Voronoi polygon lie outside the rectangle with corners (xmin,ymin)
-  and (xmax,ymax).}
+  and (xmax,ymax).
 }
 \value{A logical vector of the same length as the number of sites.  If
   the site is a reject, the corresponding element of the vector is set

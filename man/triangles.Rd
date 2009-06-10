@@ -1,5 +1,5 @@
 \name{triangles}
-\title{Extract a list of triangle from a triangulation object}
+\title{Extract a list of triangles from a triangulation object}
 \author{A. Gebhardt}
 \usage{triangles(tri.obj)
 }

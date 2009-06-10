@@ -1,13 +1,14 @@
 \name{plot.tri}
 \title{Plot a triangulation object}
 \author{A. Gebhardt}
-\usage{\method{plot}{tri}(x, add=FALSE,xlim=range(x$x),ylim=range(x$y), do.points=TRUE, ...)
+\usage{\method{plot}{tri}(x, add=FALSE,xlim=range(x$x),ylim=range(x$y), do.points=TRUE, do.labels = FALSE,...)
 }
 \alias{plot.tri}
 \arguments{
   \item{x}{object of class \code{"tri"}}
   \item{add}{logical, if \code{TRUE}, add to a current plot.}
   \item{do.points}{logical, indicates if points should be plotted.}
+  \item{do.labels}{logical, indicates if points should be labelled}
   \item{xlim,ylim}{x/y ranges for plot}
   \item{...}{additional plot parameters}
 }
@@ -17,7 +18,7 @@
 }
 \references{
    R. J. Renka (1996). Algorithm 751: TRIPACK: a constrained
-  two-dimensional {Delaunay} triangulation package.
+  two-dimensional Delaunay triangulation package.
   ACM Transactions on Mathematical Software.
   \bold{22}, 1-8. 
 }

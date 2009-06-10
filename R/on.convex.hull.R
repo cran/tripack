@@ -18,6 +18,7 @@ on.convex.hull<-function(tri.obj,x,y)
                 as.integer(tri.obj$tlptr),
                 as.integer(tri.obj$tlend),
                 onhull=logical(n),
+                eps=as.double(1E-15),
                 PACKAGE = "tripack")
   ans$onhull
 }

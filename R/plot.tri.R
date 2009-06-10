@@ -1,5 +1,6 @@
 plot.tri<-function(x,add=FALSE,xlim=range(x$x),
-                   ylim=range(x$y),do.points=TRUE,...)
+                   ylim=range(x$y),do.points=TRUE,
+                   do.labels=FALSE,...)
 {
   if(!inherits(x,"tri"))
     stop("x must be of class \"tri\"")
@@ -39,5 +40,14 @@ plot.tri<-function(x,add=FALSE,xlim=range(x$x),
         lines(c(x$x[i],x$x[j]),c(x$y[i],x$y[j]), ...)
     }
   if(do.points) points(x$x,x$y)
+  if(do.labels){
+    tr <- triangles(x)
+    for(i in 1:ans$nt){
+      mid.x <- 1/3*(x$x[tr[i,"node1"]]+x$x[tr[i,"node2"]]+x$x[tr[i,"node3"]])
+      mid.y <- 1/3*(x$y[tr[i,"node1"]]+x$y[tr[i,"node2"]]+x$y[tr[i,"node3"]])
+      if(!is.null(mid.x) && !is.null(mid.y))
+        text(mid.x,mid.y,i)
+    }
+  }
   if(!add) title("Delaunay triangulation",deparse(substitute(x)))
 }

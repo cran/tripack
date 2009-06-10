@@ -31,7 +31,7 @@
         plot.window(xlim=xlim,ylim=ylim,"")
       }
 
-    if(do.points) points(x$x,x$y)
+    if(do.points) points(x$x,x$y,...)
 
     for (i in 1:n)
       {

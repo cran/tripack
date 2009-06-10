@@ -53,7 +53,7 @@
     tri.obj<-tri.mesh(x=x,y=y,duplicate=duplicate)
     nt<-summary(tri.obj)$nt
     tmptri<-matrix(0,9,2*nt)
-    lccc<-matrix(0,4,nt)
+    lccc<-matrix(0,14,nt)
     storage.mode(lccc)<-"double"
     iccc<-matrix(0,6,nt)
     storage.mode(iccc)<-"integer"
@@ -73,13 +73,14 @@
                   as.integer(tmptri),
                   ier=as.integer(0),
                  PACKAGE = "tripack")
-    lccc<-matrix(ans$lccc,nt,4,byrow=TRUE)
+    lccc<-matrix(ans$lccc,nt,14,byrow=TRUE)
     iccc<-matrix(ans$iccc,nt,6,byrow=TRUE)
     ret<-list(x=lccc[,1],
               y=lccc[,2],
               node=(lccc[,3]>0),
               area=lccc[,3],
               ratio=lccc[,4],
+              radius=lccc[,5],
               n1=iccc[,1],
               n2=iccc[,2],
               n3=iccc[,3],
@@ -101,6 +102,7 @@
           {
             # Find neighbour triangles
             tns<-sort(c(ret$n1[i],ret$n2[i],ret$n3[i]))
+            ins <- order(c(ret$n1[i],ret$n2[i],ret$n3[i]))
             tn1<-tns[1]
             tn2<-tns[2]
             tn3<-tns[3]
@@ -152,8 +154,8 @@
                     # on hull)
                     tr<-c(ret$p1[i],ret$p2[i],ret$p3[i])
                     edge<-list(from=tr[c(1,2,3)],to=tr[c(2,3,1)])
-                    mx <- ret$tri$x[edge$from]-ret$tri$x[edge$to]/2
-                    my <- ret$tri$y[edge$from]-ret$tri$y[edge$to]/2
+                    mx <- (ret$tri$x[edge$from]+ret$tri$x[edge$to])/2
+                    my <- (ret$tri$y[edge$from]+ret$tri$y[edge$to])/2
                     eonb <- on.convex.hull(ret$tri,mx,my)
                     # Find two dummy nodes
                     for (id in 1:3){
@@ -170,8 +172,10 @@
                         # update neighbour relation
                         # (negative index indicates dummy node)
                         if(ret$n1[i]==0) ret$n1[i]<- -dummy.cnt
-                        if(ret$n2[i]==0) ret$n2[i]<- -dummy.cnt
-                        if(ret$n3[i]==0) ret$n3[i]<- -dummy.cnt
+                        else
+                          if(ret$n2[i]==0) ret$n2[i]<- -dummy.cnt
+                          else
+                            if(ret$n3[i]==0) ret$n3[i]<- -dummy.cnt
                       }
                     }
                   }
@@ -180,7 +184,7 @@
         else
           {
             # A triangle i with area 0:
-            # This can't be on the border (already removed in FORTRAN code!).
+            # This can't happen on the border (already removed in FORTRAN code!).
             # Do nothing.
             tmp<-0
           }

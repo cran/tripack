@@ -1,6 +1,30 @@
+2009-06-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* DESCRIPTION, LICENSE: License clarification
+
+2009-03-05  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* COPYING: sort out LICENSE mismatches
+
+	* R/plot.voronoi.R: pass '...' to points()
+
+2009-02-02  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/circles.Rd: new
+
+2009-01-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* INDEX, man/plot.tri.Rd, man/tri.find.Rd, man/triangles.Rd:
+	more documentation fixes
+
+2009-01-25  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/add.constraint.Rd, man/convex.hull.Rd, man/in.convex.hull.Rd, man/neighbours.Rd, man/on.convex.hull.Rd, man/plot.voronoi.Rd, man/print.summary.tri.Rd, man/print.summary.voronoi.Rd, man/print.tri.Rd, man/print.voronoi.Rd, man/summary.tri.Rd, man/summary.voronoi.Rd, man/tri.Rd, man/tri.mesh.Rd, man/voronoi.Rd, man/voronoi.findrejectsites.Rd:
+	fix documentation errors
+
 2007-10-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* DESCRIPTION, data/tritest2.R, man/identify.tri.Rd, man/plot.tri.Rd, man/plot.voronoi.Rd, man/plot.voronoi.polygons.Rd, man/print.summary.tri.Rd, man/print.summary.voronoi.Rd, man/print.tri.Rd, man/print.voronoi.Rd, man/summary.tri.Rd, man/summary.voronoi.Rd, man/tritest.Rd, man/voronoi.Rd:
+	* data/tritest2.R, man/identify.tri.Rd, man/plot.voronoi.polygons.Rd, man/tritest.Rd:
 	fix
 
 2007-09-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
@@ -30,10 +54,6 @@
 
 	* data/awtest.R, src/tripack.h: debug infinite loop in onhull
 
-2006-02-03  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* INDEX: .. reduce parameters
-
 2005-06-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* R/on.convex.hull.R: use EPSilon instaed of ==  to decide "onhull"
@@ -41,15 +61,6 @@
 2005-04-26  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* R/circles.R, src/dsos.f, src/func.f: some progress with awv
-
-2004-09-19  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* man/tri.Rd, man/tri.mesh.Rd:
-	corrected man page errors detected by R 2.0.0 alpha
-
-2004-05-26  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* man/triangles.Rd: removed dependency to akima
 
 2004-05-25  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -68,15 +79,11 @@
 
 2002-10-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* data/00Index, man/add.constraint.Rd: keyword change for dataset
+	* data/00Index: keyword change for dataset
 
-2002-07-02  alge  <alge@pc30-math.math.uni-klu.ac.at>
+2002-07-02  alge  <alge@pc30-math>
 
-	* man/convex.hull.Rd, man/tri.dellens.Rd: last T -> TRUE fixes
-
-2002-01-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* R/plot.voronoi.R: final 1.4.0 corrections
+	* man/tri.dellens.Rd: last T -> TRUE fixes
 
 2002-01-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -85,20 +92,19 @@
 
 2001-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* R/identify.tri.R, R/print.summary.tri.R, R/print.summary.voronoi.R, R/print.tri.R, R/print.voronoi.R, R/summary.tri.R, R/summary.voronoi.R, man/in.convex.hull.Rd, man/neighbours.Rd, man/on.convex.hull.Rd, man/outer.convhull.Rd, man/tripack-internal.Rd:
+	* R/identify.tri.R, R/print.summary.tri.R, R/print.summary.voronoi.R, R/print.tri.R, R/print.voronoi.R, R/summary.tri.R, R/summary.voronoi.R, man/outer.convhull.Rd, man/tripack-internal.Rd:
 	changes for R 1.4.0
 
 2001-08-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* R/tri.dellens.R, man/tri.find.Rd, man/voronoi.findrejectsites.Rd, man/voronoi.mosaic.Rd:
-	cvsroot recovery
+	* R/tri.dellens.R, man/voronoi.mosaic.Rd: cvsroot recovery
 
 2001-01-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* R/in.convex.hull.R, R/neighbours.R, R/tri.find.R:
 	PACKAGE = "tripack" added to all .Fortran calls
 
-2000-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-12-31  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* R/zzz.R: update to 1.2.0
 
@@ -115,11 +121,11 @@
 
 	* src/troutq.f: modified TRPRINT from Roger
 
-2000-04-27  alge  <alge@pc30-math.math.uni-klu.ac.at>
+2000-04-27  alge  <alge@pc30-math>
 
 	* orig/TRIPACK.shar: latest original version of TRIPACK added
 
-2000-03-18  alge  <alge@pc30-math.math.uni-klu.ac.at>
+2000-03-18  alge  <alge@pc30-math>
 
 	* src/qsort.f, src/tripack.f, src/troutp.f:
 	new version of tripack, working.
@@ -143,8 +149,6 @@
 	* TITLE: new functions for voronoi mosaic
 
 1998-05-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* COPYING: GPL added
 
 	* ChangeLog: *** empty log message ***
 

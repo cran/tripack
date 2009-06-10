@@ -1,5 +1,6 @@
 add.constraint          Add a constraint to an triangulaion object
 cells                   extract info about voronoi cells
+circles                 plot circles
 convex.hull             Return the convex hull of a triangulation
                         object
 identify.tri            Identify points in a triangulation plot
@@ -20,8 +21,8 @@ print.voronoi           Print a xect
 summary.tri             Return a summary of a triangulation object
 summary.voronoi         Return a summary of a objectect
 tri                     A triangulation object
-triangles               Extract a list of triangle from a triangulation
-                        object
+triangles               Extract a list of triangles from a
+                        triangulation object
 tri.dellens             Compute the Delaunay segment lengths
 tri.find                Locate a point in a triangulation
 tri.mesh                Create a delaunay triangulation

@@ -18,11 +18,12 @@
   triangle with area 0 at the border of the triangulation.}
 \item{ratio}{aspect ratio (inscribed radius/circumradius) of triangle
   i.}
+\item{radius}{circumradius of triangle i.}
 \item{dummy.x,dummy.y}{x and y coordinates of dummy points. They are
   used for plotting of unbounded tiles.}
 }
 \description{
-  An \code{voronoi} object is created with {\code{\link{voronoi.mosaic}}
+  An \code{voronoi} object is created with \code{\link{voronoi.mosaic}
 }}
 \seealso{\code{\link{voronoi.mosaic}},\code{\link{plot.voronoi}}
 }
