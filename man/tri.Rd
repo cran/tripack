@@ -25,7 +25,7 @@
     (the first neighbor follows the last neighbor).}
   \item{tlend}{Set of pointers to adjacency lists. \code{tlend[k]}
     points to the last neighbor of node \eqn{k} for
-    \eqn{k = 1,...,n}.  Thus, \code{tlist[\tlend[k]]}<0 if and
+    \eqn{k = 1,...,n}.  Thus, \code{tlist[tlend[k]]}<0 if and
     only if \eqn{k} is a boundary node.}
   \item{tlnew}{ Pointer to the first empty location in \code{tlist}
     and \code{tlptr} (list length plus one).}

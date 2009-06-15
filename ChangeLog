@@ -1,10 +1,13 @@
-2009-06-15  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2009-09-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* DESCRIPTION: fixes for R-2.9.0
+	* DESCRIPTION, INDEX, R/zzz.R, man/tri.Rd:
+	fixes to pass R CMD check version 2.10.0
+
+2009-08-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* man/triangles.Rd, man/tritest.Rd: small fixes for public release
 
 2009-06-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* INDEX: recovered from temp. file deletion
 
 	* LICENSE: License clarification
 
@@ -20,17 +23,16 @@
 
 2009-01-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* man/plot.tri.Rd, man/tri.find.Rd, man/triangles.Rd:
-	more documentation fixes
+	* man/plot.tri.Rd, man/tri.find.Rd: more documentation fixes
 
 2009-01-25  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* man/add.constraint.Rd, man/convex.hull.Rd, man/in.convex.hull.Rd, man/neighbours.Rd, man/on.convex.hull.Rd, man/plot.voronoi.Rd, man/print.summary.tri.Rd, man/print.summary.voronoi.Rd, man/print.tri.Rd, man/print.voronoi.Rd, man/summary.tri.Rd, man/summary.voronoi.Rd, man/tri.Rd, man/tri.mesh.Rd, man/voronoi.Rd, man/voronoi.findrejectsites.Rd:
+	* man/add.constraint.Rd, man/convex.hull.Rd, man/in.convex.hull.Rd, man/neighbours.Rd, man/on.convex.hull.Rd, man/plot.voronoi.Rd, man/print.summary.tri.Rd, man/print.summary.voronoi.Rd, man/print.tri.Rd, man/print.voronoi.Rd, man/summary.tri.Rd, man/summary.voronoi.Rd, man/tri.mesh.Rd, man/voronoi.Rd, man/voronoi.findrejectsites.Rd:
 	fix documentation errors
 
 2007-10-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* data/tritest2.R, man/identify.tri.Rd, man/plot.voronoi.polygons.Rd, man/tritest.Rd:
+	* data/tritest2.R, man/identify.tri.Rd, man/plot.voronoi.polygons.Rd:
 	fix
 
 2007-09-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
@@ -110,10 +112,6 @@
 	* R/in.convex.hull.R, R/neighbours.R, R/tri.find.R:
 	PACKAGE = "tripack" added to all .Fortran calls
 
-2000-12-31  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* R/zzz.R: update to 1.2.0
-
 2000-06-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
 	* data/index.doc: last changes for R CMD build to succeed
@@ -144,6 +142,11 @@
 	* src/Makefile, src/tritest.f:
 	Makefile and standalone examples removed, it prevented tripack.so to
 	be correctly linked (missing references to libg2c on a SuSE system)
+
+1998-08-19  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* src-c/voronoi.c, src-c/Makefile, src-c/inhull.c, src-c/tripack.c, src-c/tritest.c:
+	src-c tree removed (that means it will now only work with R >= 0.62.x)
 
 1998-06-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
