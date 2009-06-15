@@ -1,6 +1,12 @@
+2009-06-15  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+
+	* DESCRIPTION: fixes for R-2.9.0
+
 2009-06-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* DESCRIPTION, LICENSE: License clarification
+	* INDEX: recovered from temp. file deletion
+
+	* LICENSE: License clarification
 
 2009-03-05  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
@@ -14,7 +20,7 @@
 
 2009-01-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
-	* INDEX, man/plot.tri.Rd, man/tri.find.Rd, man/triangles.Rd:
+	* man/plot.tri.Rd, man/tri.find.Rd, man/triangles.Rd:
 	more documentation fixes
 
 2009-01-25  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
@@ -138,11 +144,6 @@
 	* src/Makefile, src/tritest.f:
 	Makefile and standalone examples removed, it prevented tripack.so to
 	be correctly linked (missing references to libg2c on a SuSE system)
-
-1998-08-19  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* src-c/voronoi.c, src-c/Makefile, src-c/inhull.c, src-c/tripack.c, src-c/tritest.c:
-	src-c tree removed (that means it will now only work with R >= 0.62.x)
 
 1998-06-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
 
