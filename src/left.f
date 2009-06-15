@@ -1,0 +1,14 @@
+      SUBROUTINE ISLEFT(X1,Y1,X2,Y2,X0,Y0,L)
+      IMPLICIT NONE
+      DOUBLE PRECISION X1, Y1, X2, Y2, X0, Y0     
+      INTEGER L
+      LOGICAL LEFT
+      EXTERNAL LEFT
+
+      IF (LEFT(X1,Y1,X2,Y2,X0,Y0)) THEN
+         L=1
+      ELSE
+         L=0
+      END IF
+      RETURN
+      END

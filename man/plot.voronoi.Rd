@@ -1,7 +1,21 @@
 \name{plot.voronoi}
-\title{Plot a xect}
+\title{Plot a voronoi object}
 \author{A. Gebhardt}
-\usage{\method{plot}{voronoi}(x, add=FALSE, xlim=c(min(x$tri$x)-0.1*diff(range(x$tri$x)), max(x$tri$x) + 0.1 *diff(range(x$tri$x))),   ylim=c(min(x$tri$y)-0.1*diff(range(x$tri$y)),max(x$tri$y)+0.1*diff(range(x$tri$y))),all=FALSE,do.points=TRUE,main="Voronoi mosaic",sub=deparse(substitute(x)), ...)
+\usage{\method{plot}{voronoi}(x,add=FALSE,
+                           xlim=c(min(x$tri$x)-
+                             0.1*diff(range(x$tri$x)),
+                             max(x$tri$x)+
+                             0.1*diff(range(x$tri$x))),
+                           ylim=c(min(x$tri$y)-
+                             0.1*diff(range(x$tri$y)),
+                             max(x$tri$y)+
+                             0.1*diff(range(x$tri$y))),
+                           all=FALSE,
+                           do.points=TRUE,
+                           main="Voronoi mosaic",
+                           sub=deparse(substitute(x)),
+                           isometric=FALSE,
+                           ...)
 }
 \alias{plot.voronoi}
 \arguments{
@@ -15,6 +29,7 @@
   \item{do.points}{logical, indicates if points should be plotted.}
   \item{main}{plot title}
   \item{sub}{plot subtitle}
+  \item{isometric}{generate an isometric plot (default \code{FALSE})}
   \item{...}{additional plot parameters}
 }
 \description{Plots the mosaic \code{"x"}.
@@ -34,16 +49,21 @@
   \code{\link{summary.voronoi}}
 }
 \examples{
-# generate a random mosaic
+# plot a random mosaic
 plot(voronoi.mosaic(runif(100),runif(100),duplicate="remove"))
+# use isometric=TRUE and all=TRUE to see the complete mosaic
+# including extreme outlier points:
+plot(voronoi.mosaic(runif(100),runif(100),duplicate="remove"),
+     all=TRUE, isometric=TRUE)
 # use a part of the quakes data set:
 data(quakes)
 quakes.part<-quakes[(quakes[,1]<=-17 & quakes[,1]>=-19.0 &
                      quakes[,2]<=182.0 & quakes[,2]>=180.0),]
-quakes.vm<-voronoi.mosaic(quakes.part$lon, quakes.part$lat, duplicate="remove")
-plot(quakes.vm)
+quakes.vm<-voronoi.mosaic(quakes.part$lon, quakes.part$lat,
+                          duplicate="remove")
+plot(quakes.vm, isometric=TRUE)
 # use the whole quakes data set 
 # (will not work with standard memory settings, hence commented out here)
-#plot(voronoi.mosaic(quakes$lon, quakes$lat, duplicate="remove"))
+#plot(voronoi.mosaic(quakes$lon, quakes$lat, duplicate="remove"), isometric=TRUE)
 }
 \keyword{spatial}

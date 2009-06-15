@@ -695,7 +695,7 @@ C
 C     CHECK FOR VALID INPUT
 C
       IF (NEQ .LE. 0) THEN
-         WRITE (XERN1, '(I8)') NEQ
+c         WRITE (XERN1, '(I8)') NEQ
          CALL XERMSG ('SLATEC', 'DSOS', 'THE NUMBER OF EQUATIONS ' //
      *      'MUST BE A POSITIVE INTEGER.  YOU HAVE CALLED THE ' //
      *      'CODE WITH NEQ = ' // XERN1, 1, 1)
@@ -703,8 +703,8 @@ C
       ENDIF
 C
       IF (RTOLX .LT. 0.0D0 .OR. ATOLX .LT. 0.0D0) THEN
-         WRITE (XERN3, '(1PE15.6)') ATOLX
-         WRITE (XERN4, '(1PE15.6)') RTOLX
+c        WRITE (XERN3, '(1PE15.6)') ATOLX
+c        WRITE (XERN4, '(1PE15.6)') RTOLX
          CALL XERMSG ('SLATEC', 'DSOS', 'THE ERROR TOLERANCES FOR ' //
      *      'THE SOLUTION ITERATES CANNOT BE NEGATIVE. YOU HAVE ' //
      *      'CALLED THE CODE WITH  RTOLX = ' // XERN3 //
@@ -713,7 +713,7 @@ C
       ENDIF
 C
       IF (TOLF .LT. 0.0D0) THEN
-         WRITE (XERN3, '(1PE15.6)') TOLF
+c        WRITE (XERN3, '(1PE15.6)') TOLF
          CALL XERMSG ('SLATEC', 'DSOS', 'THE RESIDUAL ERROR ' //
      *      'TOLERANCE MUST BE NON-NEGATIVE.  YOU HAVE CALLED THE ' //
      *      'CODE WITH TOLF = ' // XERN3, 3, 1)
@@ -726,7 +726,7 @@ C
          IF (IW(1) .EQ. (-1)) IPRINT = -1
          MXIT = IW(2)
          IF (MXIT .LE. 0) THEN
-            WRITE (XERN1, '(I8)') MXIT
+c           WRITE (XERN1, '(I8)') MXIT
             CALL XERMSG ('SLATEC', 'DSOS', 'YOU HAVE TOLD THE CODE ' //
      *         'TO USE OPTIONAL INPUT ITEMS BY SETTING IFLAG=-1. ' //
      *         'HOWEVER YOU HAVE CALLED THE CODE WITH THE MAXIMUM ' //
@@ -738,7 +738,7 @@ C
 C
       NC = (NEQ*(NEQ+1))/2
       IF (LRW .LT. 1 + 6*NEQ + NC) THEN
-         WRITE (XERN1, '(I8)') LRW
+c        WRITE (XERN1, '(I8)') LRW
          CALL XERMSG ('SLATEC', 'DSOS', 'DIMENSION OF THE RW ARRAY ' //
      *      'MUST BE AT LEAST 1 + 6*NEQ + NEQ*(NEQ+1)/2 .  YOU HAVE ' //
      *      'CALLED THE CODE WITH LRW = ' // XERN1, 5, 1)
@@ -746,7 +746,7 @@ C
       ENDIF
 C
       IF (LIW .LT. 3 + NEQ) THEN
-         WRITE (XERN1, '(I8)') LIW
+c        WRITE (XERN1, '(I8)') LIW
          CALL XERMSG ('SLATEC', 'DSOS', 'DIMENSION OF THE IW ARRAY ' //
      *      'MUST BE AT LEAST 3 + NEQ.  YOU HAVE CALLED THE CODE ' //
      *      'WITH  LIW = ' // XERN1, 6, 1)
@@ -1121,7 +1121,7 @@ C                       RESIDUAL NORM IF DESIRED
 C
                         IF (IPRINT .NE. (-1)) GO TO 220
                            MM = M - 1
-                           WRITE (LOUN,210) FMAX,MM,(X(J), J = 1, N)
+c                          WRITE (LOUN,210) FMAX,MM,(X(J), J = 1, N)
   210                      FORMAT ('0RESIDUAL NORM =', D9.2, / 1X,
      1                             'SOLUTION ITERATE (', I3, ')', /
      2                             (1X, 5D26.14))
@@ -1373,7 +1373,7 @@ C***FIRST EXECUTABLE STATEMENT  FDUMP
       RETURN
       END
 *DECK I1MACH
-      INTEGER FUNCTION I1MACH (I)
+c      INTEGER FUNCTION I1MACH (I)
 C***BEGIN PROLOGUE  I1MACH
 C***PURPOSE  Return integer machine dependent constants.
 C***LIBRARY   SLATEC
@@ -1464,9 +1464,9 @@ C   930618  Corrected I1MACH(5) for Convex -p8 and -pd8 compiler
 C           options.  (DWL, RWC and WRB).
 C***END PROLOGUE  I1MACH
 C
-      INTEGER IMACH(16),OUTPUT
-      SAVE IMACH
-      EQUIVALENCE (IMACH(4),OUTPUT)
+c      INTEGER IMACH(16),OUTPUT
+c      SAVE IMACH
+c      EQUIVALENCE (IMACH(4),OUTPUT)
 C
 C     MACHINE CONSTANTS FOR THE AMIGA
 C     ABSOFT COMPILER
@@ -2247,19 +2247,19 @@ C     DATA IMACH(15) /       -127 /
 C     DATA IMACH(16) /        127 /
 C
 C***FIRST EXECUTABLE STATEMENT  I1MACH
-      IF (I .LT. 1  .OR.  I .GT. 16) GO TO 10
+c      IF (I .LT. 1  .OR.  I .GT. 16) GO TO 10
 C
-      I1MACH = IMACH(I)
-      RETURN
+c      I1MACH = IMACH(I)
+c      RETURN
 C
-   10 CONTINUE
-      WRITE (UNIT = OUTPUT, FMT = 9000)
- 9000 FORMAT ('1ERROR    1 IN I1MACH - I OUT OF BOUNDS')
+c   10 CONTINUE
+c      WRITE (UNIT = OUTPUT, FMT = 9000)
+c 9000 FORMAT ('1ERROR    1 IN I1MACH - I OUT OF BOUNDS')
 C
 C     CALL FDUMP
 C
-      STOP
-      END
+c      STOP
+c      END
 *DECK J4SAVE
       FUNCTION J4SAVE (IWHICH, IVALUE, ISET)
 C***BEGIN PROLOGUE  J4SAVE
@@ -2422,7 +2422,7 @@ C   920501  Reformatted the REFERENCES section.  (WRB)
 C***END PROLOGUE  XERHLT
       CHARACTER*(*) MESSG
 C***FIRST EXECUTABLE STATEMENT  XERHLT
-      STOP
+c      STOP
       END
 *DECK XERMSG
       SUBROUTINE XERMSG (LIBRAR, SUBROU, MESSG, NERR, LEVEL)
@@ -2748,7 +2748,7 @@ C       IF LKNTRL IS POSITIVE, WRITE THE ERROR NUMBER AND REQUEST A
 C          TRACEBACK.
 C
       IF (LKNTRL .GT. 0) THEN
-         WRITE (TEMP, '(''ERROR NUMBER = '', I8)') NERR
+c        WRITE (TEMP, '(''ERROR NUMBER = '', I8)') NERR
          DO 10 I=16,22
             IF (TEMP(I:I) .NE. ' ') GO TO 20
    10    CONTINUE
@@ -2914,7 +2914,7 @@ C
       IF (LENMSG .EQ. 0) THEN
          CBUFF(LPREF+1:LPREF+1) = ' '
          DO 40 I=1,NUNIT
-            WRITE(IU(I), '(A)') CBUFF(1:LPREF+1)
+c           WRITE(IU(I), '(A)') CBUFF(1:LPREF+1)
    40    CONTINUE
          RETURN
       ENDIF
@@ -3010,7 +3010,7 @@ C
 C       PRINT
 C
       DO 60 I=1,NUNIT
-         WRITE(IU(I), '(A)') CBUFF(1:LPREF+LPIECE)
+c        WRITE(IU(I), '(A)') CBUFF(1:LPREF+LPIECE)
    60 CONTINUE
 C
       IF (NEXTC .LE. LENMSG) GO TO 50
@@ -3100,19 +3100,19 @@ C
 C
 C           Print the table header.
 C
-            WRITE (IUNIT,9000)
+c           WRITE (IUNIT,9000)
 C
 C           Print body of table.
 C
             DO 10 I = 1,NMSG
-               WRITE (IUNIT,9010) LIBTAB(I), SUBTAB(I), MESTAB(I),
-     *            NERTAB(I),LEVTAB(I),KOUNT(I)
+c              WRITE (IUNIT,9010) LIBTAB(I), SUBTAB(I), MESTAB(I),
+c    *            NERTAB(I),LEVTAB(I),KOUNT(I)
    10       CONTINUE
 C
 C           Print number of other errors.
 C
-            IF (KOUNTX.NE.0) WRITE (IUNIT,9020) KOUNTX
-            WRITE (IUNIT,9030)
+c           IF (KOUNTX.NE.0) WRITE (IUNIT,9020) KOUNTX
+c           WRITE (IUNIT,9030)
    20    CONTINUE
 C
 C        Clear the error tables.

@@ -1,9 +1,21 @@
 plot.tri<-function(x,add=FALSE,xlim=range(x$x),
                    ylim=range(x$y),do.points=TRUE,
-                   do.labels=FALSE,...)
+                   do.labels=FALSE, isometric=FALSE,...)
 {
   if(!inherits(x,"tri"))
     stop("x must be of class \"tri\"")
+  if(isometric){
+    xlim=range(x$x)
+    ylim=range(x$y)
+    xrange <- diff(xlim)
+    yrange <- diff(ylim)
+    maxrange <- max(xrange,yrange)
+    midx <- sum(xlim)/2
+    midy <- sum(ylim)/2
+    xlim <- midx+(xlim-midx)/xrange*maxrange
+    ylim <- midy+(ylim-midy)/yrange*maxrange
+  }
+  
   tnabor<- integer(x$tlnew)
   nnabs <- integer(x$n)
   nptr <- integer(x$n)

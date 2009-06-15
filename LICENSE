@@ -7,7 +7,7 @@ see http://www.acm.org/publications/policies/softwarecrnotice
 
 
 2. R interface and extensions related to Voronoi mosaics
-(src/voronoi.f, awvor.f): 
+(src/voronoi.f, src/awvor.f, arc/left.f): 
 
 The R interface code has been developed as work based on the 
 ACM licensed code, hence it is also ACM licensed, copyright 

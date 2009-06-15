@@ -11,6 +11,7 @@
                            do.points=TRUE,
                            main="Voronoi mosaic",
                            sub=deparse(substitute(x)),
+                           isometric=FALSE,
                            ...)
   {
 
@@ -22,7 +23,30 @@
         ylim<-c(min(x$y)-0.1*diff(range(x$y)),
                 max(x$y)+0.1*diff(range(x$y)))
       }
-    
+    if(isometric){
+      if(!all(xlim==c(min(x$tri$x)-
+                0.1*diff(range(x$tri$x)),
+                max(x$tri$x)+
+                0.1*diff(range(x$tri$x))) ||
+              !all(ylim==c(min(x$tri$y)-
+                     0.1*diff(range(x$tri$y)),
+                     max(x$tri$y)+
+                     0.1*diff(range(x$tri$y)))))){
+        print(xlim)
+        print(ylim)
+        warning("isometric option not used as xlim or ylim explicitly given")
+      } else {
+        xlim=range(x$x)
+        ylim=range(x$y)
+        xrange <- diff(xlim)
+        yrange <- diff(ylim)
+        maxrange <- max(xrange,yrange)
+        midx <- sum(xlim)/2
+        midy <- sum(ylim)/2
+        xlim <- midx+(xlim-midx)/xrange*maxrange
+        ylim <- midy+(ylim-midy)/yrange*maxrange
+      }
+    }
     n<-length(x$x)
 
     if(!add)

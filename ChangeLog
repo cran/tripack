@@ -1,135 +1,167 @@
-2009-09-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2012-31-10  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* DESCRIPTION, INDEX, R/zzz.R, man/tri.Rd:
-	fixes to pass R CMD check version 2.10.0
+	* disable additive voronoi stuff and fix for R 2.15.2
 
-2009-08-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2011-03-04  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* src/awvor.f: work on wcircum
+
+2011-03-01  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/aw.voronoi.mosaic.R, R/wcircum.R: new function
+
+2011-02-28  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/plot.aw.voronoi.R, R/plot.tri.R, R/plot.voronoi.R, man/aw.voronoi.Rd, man/aw.voronoi.mosaic.Rd, man/plot.aw.voronoi.Rd, man/plot.tri.Rd, man/plot.voronoi.Rd:
+	* include an option for equal scaled plots
+	* some documentation fixes
+
+2009-10-26  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/is.left.of.R: alias for left
+
+	* DESCRIPTION, INDEX, LICENSE, R/circum.R, R/circumcircle.R, R/left.R, man/awtest.Rd, man/circum.Rd, man/left.Rd:
+	circumcircle stuff works now.
+
+	* data/circtest2.R: test case
+
+	* man/circtest.Rd, man/circumcircle.Rd: circumcircle seems to work
+
+2009-10-23  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* data/circtest.R, src/vleft.f:
+	add initial version of a circumcircle function for n points.
+	needs still some work.
+
+2009-09-25  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* data/awtest3.R: use Fortran implementaion of LEFT for is.left.of,
+	plot.aw routine mostly fixed for simple cases
+
+2009-09-24  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/hyperbola.R: more aw work
+
+	* data/awtest2.R: some more aw work.
+
+2009-09-22  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/print.aw.voronoi.R, R/print.summary.aw.voronoi.R, R/summary.aw.voronoi.R, man/print.aw.voronoi.Rd, man/print.summary.aw.voronoi.Rd, man/print.voronoi.Rd, man/summary.aw.voronoi.Rd, man/summary.voronoi.Rd, man/tripack-internal.Rd:
+	somehow complete the aw* functions
+
+2009-09-21  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/zzz.R, man/tri.Rd: fixes to pass R CMD check version 2.10.0
+
+2009-08-24  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* man/triangles.Rd, man/tritest.Rd: small fixes for public release
 
-2009-06-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* LICENSE: License clarification
-
-2009-03-05  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2009-03-05  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* COPYING: sort out LICENSE mismatches
 
-	* R/plot.voronoi.R: pass '...' to points()
-
-2009-02-02  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2009-02-02  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* man/circles.Rd: new
 
-2009-01-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2009-01-30  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* man/plot.tri.Rd, man/tri.find.Rd: more documentation fixes
+	* man/tri.find.Rd: more documentation fixes
 
-2009-01-25  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2009-01-25  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* man/add.constraint.Rd, man/convex.hull.Rd, man/in.convex.hull.Rd, man/neighbours.Rd, man/on.convex.hull.Rd, man/plot.voronoi.Rd, man/print.summary.tri.Rd, man/print.summary.voronoi.Rd, man/print.tri.Rd, man/print.voronoi.Rd, man/summary.tri.Rd, man/summary.voronoi.Rd, man/tri.mesh.Rd, man/voronoi.Rd, man/voronoi.findrejectsites.Rd:
+	* man/add.constraint.Rd, man/convex.hull.Rd, man/in.convex.hull.Rd, man/neighbours.Rd, man/on.convex.hull.Rd, man/print.summary.tri.Rd, man/print.summary.voronoi.Rd, man/print.tri.Rd, man/summary.tri.Rd, man/tri.mesh.Rd, man/voronoi.Rd, man/voronoi.findrejectsites.Rd:
 	fix documentation errors
 
-2007-10-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2007-10-09  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* data/tritest2.R, man/identify.tri.Rd, man/plot.voronoi.polygons.Rd:
 	fix
 
-2007-09-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* R/plot.aw.voronoi.R, src/awvor.f: small function fixes
-
-2006-12-21  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* R/aw.voronoi.mosaic.R: more work on special cases
-
-2006-12-14  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
-
-	* R/hyperbola.R: use different start values for dsos in special cases
-
-2006-11-27  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2006-11-27  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* work: bug hunting
 
-2006-04-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2006-04-13  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* R/plot.tri.R, man/aw.voronoi.mosaic.Rd, src/init.c: small fixes
+	* src/init.c: small fixes
 
-2006-02-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2006-02-09  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/voronoi.mosaic.R, src/inhull.f, src/voronoi.f:
 	use circumcircle radius also for ordinary voronoi mosaic
 
 	* data/awtest.R, src/tripack.h: debug infinite loop in onhull
 
-2005-06-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2005-06-13  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/on.convex.hull.R: use EPSilon instaed of ==  to decide "onhull"
 
-2005-04-26  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2005-04-26  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/circles.R, src/dsos.f, src/func.f: some progress with awv
 
-2004-05-25  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2004-05-25  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* man/cells.Rd, man/voronoi.area.Rd: small fixes for R 1.9
 
-2003-09-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2003-09-10  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/cells.R: new cell information function for voronoi mosaics
 
-2003-04-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2003-04-01  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* man/voronoi.polygons.Rd: docu
 
 	* R/plot.voronoi.polygons.R, R/voronoi.polygons.R:
 	new polygon extraction functions from Denis White <white.denis@epamail.epa.gov>
 
-2002-10-13  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2002-10-13  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* data/00Index: keyword change for dataset
 
-2002-07-02  alge  <alge@pc30-math>
+2002-07-02  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* man/tri.dellens.Rd: last T -> TRUE fixes
 
-2002-01-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2002-01-01  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/add.constraint.R, R/convex.hull.R, R/tri.mesh.R, R/triangles.R, R/voronoi.area.R, R/voronoi.findrejectsites.R:
 	checkTnF cleanup
 
-2001-12-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2001-12-30  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* R/identify.tri.R, R/print.summary.tri.R, R/print.summary.voronoi.R, R/print.tri.R, R/print.voronoi.R, R/summary.tri.R, R/summary.voronoi.R, man/outer.convhull.Rd, man/tripack-internal.Rd:
+	* R/identify.tri.R, R/print.summary.tri.R, R/print.summary.voronoi.R, R/print.tri.R, R/print.voronoi.R, R/summary.tri.R, R/summary.voronoi.R, man/outer.convhull.Rd:
 	changes for R 1.4.0
 
-2001-08-09  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2001-08-09  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/tri.dellens.R, man/voronoi.mosaic.Rd: cvsroot recovery
 
-2001-01-10  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2001-01-10  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/in.convex.hull.R, R/neighbours.R, R/tri.find.R:
 	PACKAGE = "tripack" added to all .Fortran calls
 
-2000-06-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-06-04  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* data/index.doc: last changes for R CMD build to succeed
 
-2000-06-03  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-06-03  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* README:
 	Next release for CRAN, passes CMD check with R 1.0.1 and 1.1.0(devel)
 
-2000-05-30  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+2000-05-30  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* src/troutq.f: modified TRPRINT from Roger
 
-2000-04-27  alge  <alge@pc30-math>
+2000-04-27  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* orig/TRIPACK.shar: latest original version of TRIPACK added
 
-2000-03-18  alge  <alge@pc30-math>
+2000-03-18  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* src/qsort.f, src/tripack.f, src/troutp.f:
 	new version of tripack, working.
@@ -137,30 +169,30 @@
 	 maybe because then all triangles are border triangles.
 	 the nodes are no circumcircle centres then! why?
 
-1999-09-07  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1999-09-07  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* src/Makefile, src/tritest.f:
 	Makefile and standalone examples removed, it prevented tripack.so to
 	be correctly linked (missing references to libg2c on a SuSE system)
 
-1998-08-19  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-08-19  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* src-c/voronoi.c, src-c/Makefile, src-c/inhull.c, src-c/tripack.c, src-c/tritest.c:
 	src-c tree removed (that means it will now only work with R >= 0.62.x)
 
-1998-06-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-06-01  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* TITLE: new functions for voronoi mosaic
 
-1998-05-24  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-05-24  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* ChangeLog: *** empty log message ***
 
-1998-05-04  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-05-04  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/outer.convhull.R: additional functions using convex hull
 
-1998-03-01  Albrecht Gebhardt  <albrecht.gebhardt@uni-klu.ac.at>
+1998-03-01  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* .cvsignore, data/tritest.R, orig/751, orig/tripack.bib: New file.
 

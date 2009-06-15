@@ -1,5 +1,5 @@
 \name{print.voronoi}
-\title{Print a xect}
+\title{Print a voronoi object}
 \author{A. Gebhardt}
 \usage{\method{print}{voronoi}(x,...)
 }

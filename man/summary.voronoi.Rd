@@ -1,12 +1,12 @@
 \name{summary.voronoi}
-\title{Return a summary of a objectect}
+\title{Return a summary of a voronoi object}
 \author{A. Gebhardt}
 \usage{\method{summary}{voronoi}(object,...)
 }
 \alias{summary.voronoi}
 \arguments{
   \item{object}{object of class \code{"voronoi"}}
-  \item{...}{additional paramters for \code{summary}}
+  \item{...}{additional parameters for \code{summary}}
 }
 \description{
   Returns some information about \code{object}
