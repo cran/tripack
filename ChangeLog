@@ -1,18 +1,34 @@
-2012-31-10  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+2013-09-16  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* disable additive voronoi stuff and fix for R 2.15.2
+	* .Rbuildignore, man/plot.tri.Rd: cleanup
 
-2011-03-04  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+	* DESCRIPTION, NAMESPACE, man/tripack-internal.Rd: fix license entry
 
-	* src/awvor.f: work on wcircum
+2012-10-31  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* INDEX, data/awtest3a.R, data/awtest3b.R, data/awtest3c.R, data/awtest3d.R, data/awtest3e.R, src/left.f, src/wcircum.f:
+	wcircum examples
+
+2012-10-30  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* src/dsos.f, src/tripack.f: remove STOPs and WRITEs
+
+2012-01-25  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/wcircum.R, src/awvor.f: more work on wcircum
+
+2012-01-08  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
+
+	* R/zzz.R, data/00Index, data/awtest.R, data/awtest.rda, data/awtest2.R, data/awtest2.rda, data/awtest3.R, data/awtest3.rda, data/circtest.R, data/circtest.rda, data/circtest2.R, data/circtest2.rda, data/tritest.R, data/tritest.rda, data/tritest2.R, data/tritest2.rda, man/wcircum.Rd:
+	prepare for R 2.14.1
 
 2011-03-01  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* R/aw.voronoi.mosaic.R, R/wcircum.R: new function
+	* R/aw.voronoi.mosaic.R: new function
 
 2011-02-28  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* R/plot.aw.voronoi.R, R/plot.tri.R, R/plot.voronoi.R, man/aw.voronoi.Rd, man/aw.voronoi.mosaic.Rd, man/plot.aw.voronoi.Rd, man/plot.tri.Rd, man/plot.voronoi.Rd:
+	* R/plot.aw.voronoi.R, R/plot.tri.R, R/plot.voronoi.R, man/aw.voronoi.Rd, man/aw.voronoi.mosaic.Rd, man/plot.aw.voronoi.Rd, man/plot.voronoi.Rd:
 	* include an option for equal scaled plots
 	* some documentation fixes
 
@@ -20,38 +36,29 @@
 
 	* R/is.left.of.R: alias for left
 
-	* DESCRIPTION, INDEX, LICENSE, R/circum.R, R/circumcircle.R, R/left.R, man/awtest.Rd, man/circum.Rd, man/left.Rd:
+	* LICENSE, R/circum.R, R/circumcircle.R, R/left.R, man/awtest.Rd, man/circum.Rd, man/left.Rd:
 	circumcircle stuff works now.
-
-	* data/circtest2.R: test case
 
 	* man/circtest.Rd, man/circumcircle.Rd: circumcircle seems to work
 
 2009-10-23  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* data/circtest.R, src/vleft.f:
+	* src/vleft.f:
 	add initial version of a circumcircle function for n points.
 	needs still some work.
-
-2009-09-25  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
-
-	* data/awtest3.R: use Fortran implementaion of LEFT for is.left.of,
-	plot.aw routine mostly fixed for simple cases
 
 2009-09-24  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
 	* R/hyperbola.R: more aw work
 
-	* data/awtest2.R: some more aw work.
-
 2009-09-22  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* R/print.aw.voronoi.R, R/print.summary.aw.voronoi.R, R/summary.aw.voronoi.R, man/print.aw.voronoi.Rd, man/print.summary.aw.voronoi.Rd, man/print.voronoi.Rd, man/summary.aw.voronoi.Rd, man/summary.voronoi.Rd, man/tripack-internal.Rd:
+	* R/print.aw.voronoi.R, R/print.summary.aw.voronoi.R, R/summary.aw.voronoi.R, man/print.aw.voronoi.Rd, man/print.summary.aw.voronoi.Rd, man/print.voronoi.Rd, man/summary.aw.voronoi.Rd, man/summary.voronoi.Rd:
 	somehow complete the aw* functions
 
 2009-09-21  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* R/zzz.R, man/tri.Rd: fixes to pass R CMD check version 2.10.0
+	* man/tri.Rd: fixes to pass R CMD check version 2.10.0
 
 2009-08-24  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
@@ -76,8 +83,7 @@
 
 2007-10-09  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* data/tritest2.R, man/identify.tri.Rd, man/plot.voronoi.polygons.Rd:
-	fix
+	* man/identify.tri.Rd, man/plot.voronoi.polygons.Rd: fix
 
 2006-11-27  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
@@ -92,7 +98,7 @@
 	* R/voronoi.mosaic.R, src/inhull.f, src/voronoi.f:
 	use circumcircle radius also for ordinary voronoi mosaic
 
-	* data/awtest.R, src/tripack.h: debug infinite loop in onhull
+	* src/tripack.h: debug infinite loop in onhull
 
 2005-06-13  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
@@ -100,7 +106,7 @@
 
 2005-04-26  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* R/circles.R, src/dsos.f, src/func.f: some progress with awv
+	* R/circles.R, src/func.f: some progress with awv
 
 2004-05-25  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
@@ -116,10 +122,6 @@
 
 	* R/plot.voronoi.polygons.R, R/voronoi.polygons.R:
 	new polygon extraction functions from Denis White <white.denis@epamail.epa.gov>
-
-2002-10-13  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
-
-	* data/00Index: keyword change for dataset
 
 2002-07-02  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
@@ -163,8 +165,7 @@
 
 2000-03-18  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* src/qsort.f, src/tripack.f, src/troutp.f:
-	new version of tripack, working.
+	* src/qsort.f, src/troutp.f: new version of tripack, working.
 	errors for small number od points:
 	 maybe because then all triangles are border triangles.
 	 the nodes are no circumcircle centres then! why?
@@ -194,5 +195,5 @@
 
 1998-03-01  Albrecht Gebhardt  <agebhard@uni-klu.ac.at>
 
-	* .cvsignore, data/tritest.R, orig/751, orig/tripack.bib: New file.
+	* .cvsignore, orig/751, orig/tripack.bib: New file.
 
