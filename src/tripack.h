@@ -5,11 +5,13 @@ int F77_NAME(addcst)(int *ncc, int *lcc, int *n,
 		     double *x, double *y, int *lwk, int *iwk, 
 		     int *list, int *lptr, int *lend, int *ier);
 
-int F77_NAME(awvoronoi)(int *ncc, int *lcc, int *n, 
-			double *x, double *y, double *wt, 
-			int *list, int *lptr, int *lend, 
-			int *nt, double *lccc, int *iccc, 
-			int *lct, int *ltri, int* maxit, int *ier);
+//not yet finiehed
+//int F77_NAME(awvoronoi)(int *ncc, int *lcc, int *n, 
+//			double *x, double *y, double *wt, 
+//			int *list, int *lptr, int *lend, 
+//			int *nt, double *lccc, int *iccc, 
+//			int *lct, int *ltri, int* maxit, int *ier);
+//
 
 int F77_NAME(troutq)(int *ncc, int *lcc, int *n, 
 		     double *x, double *y, int *list, int *lptr, 

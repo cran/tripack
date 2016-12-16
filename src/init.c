@@ -22,24 +22,25 @@ static R_NativePrimitiveArgType addcst_t[11] = {
   INTSXP   /* IER */
 };
 
-static R_NativePrimitiveArgType awvoronoi_t[16] = {
-  INTSXP,  /* NCC */
-  INTSXP,  /* LCC */
-  INTSXP,  /* N */
-  REALSXP, /* X */
-  REALSXP, /* Y */
-  REALSXP, /* WT */
-  INTSXP,  /* LIST */
-  INTSXP,  /* LPTR */
-  INTSXP,  /* LEND */
-  INTSXP,  /* NT */
-  REALSXP, /* LCCC */
-  INTSXP,  /* ICCC */
-  INTSXP,  /* LCT */
-  INTSXP,  /* LTRI */
-  INTSXP,  /* MAXIT */
-  INTSXP   /* IER */
-};
+//not yet finished 
+//static R_NativePrimitiveArgType awvoronoi_t[16] = {
+//  INTSXP,  /* NCC */
+//  INTSXP,  /* LCC */
+//  INTSXP,  /* N */
+//  REALSXP, /* X */
+//  REALSXP, /* Y */
+//  REALSXP, /* WT */
+//  INTSXP,  /* LIST */
+//  INTSXP,  /* LPTR */
+//  INTSXP,  /* LEND */
+//  INTSXP,  /* NT */
+//  REALSXP, /* LCCC */
+//  INTSXP,  /* ICCC */
+//  INTSXP,  /* LCT */
+//  INTSXP,  /* LTRI */
+//  INTSXP,  /* MAXIT */
+//  INTSXP   /* IER */
+//};
 
 static R_NativePrimitiveArgType troutq_t[17] = {
   INTSXP,  /* NCC */
@@ -162,8 +163,9 @@ static R_NativePrimitiveArgType voronoi_t[14] = {
 static R_FortranMethodDef fortranMethods[] = {
   {"addcst", (DL_FUNC) &F77_SUB(addcst), 11, addcst_t}, 
     /* add.constraint */
-  {"awvoronoi", (DL_FUNC) &F77_SUB(awvoronoi), 16, awvoronoi_t}, 
-    /* aw.voronoi.mosaic */
+// not yet finished
+//{"awvoronoi", (DL_FUNC) &F77_SUB(awvoronoi), 16, awvoronoi_t}, 
+//  /* aw.voronoi.mosaic */
   {"troutq", (DL_FUNC) &F77_SUB(troutq), 17, troutq_t}, 
     /* cells, neighbours, plot.tri, print.tri, summary.tri */
   {"bnodes", (DL_FUNC) &F77_SUB(bnodes), 8, bnodes_t}, 

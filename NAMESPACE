@@ -30,7 +30,7 @@ export("voronoi.findrejectsites")
 export("voronoi.mosaic")
 export("voronoi.polygons")
 
-# not finished:
+# not yet finished:
 #export("wcircum")
 #export("hyperbola")
 #export("print.summary.aw.voronoi")
@@ -51,14 +51,15 @@ S3method(print, voronoi)
 S3method(print, summary.voronoi)
 S3method(summary, voronoi)
 
-# not finished:
+# not yet finished:
 #S3method(plot, aw.voronoi)
 #S3method(print, aw.voronoi)
 #S3method(summary, aw.voronoi)
 
 
-  importFrom("grDevices", "heat.colors")
-  importFrom("graphics", "hist", "identify", "lines", "par", "plot",
-             "plot.new", "plot.window", "points", "polygon", "text",
-             "title")
-  importFrom("stats", "dist")
+importFrom("grDevices", "heat.colors")
+importFrom("graphics", "hist", "identify", "lines", "par", "plot",
+           "plot.new", "plot.window", "points", "polygon", "text",
+           "title")
+importFrom("stats", "dist")
+importFrom("stats", "rnorm")

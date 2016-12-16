@@ -3,11 +3,11 @@
 1.  Fortran code: 
 
 Copyrighted and Licensed by ACM, 
-see http://www.acm.org/publications/policies/softwarecrnotice
+see http://www.acm.org/publications/policies/software-copyright-notice
 
 
 2. R interface and extensions related to Voronoi mosaics
-(src/voronoi.f, src/awvor.f, arc/left.f): 
+(src/voronoi.f, src/left.f): 
 
 The R interface code has been developed as work based on the 
 ACM licensed code, hence it is also ACM licensed, copyright 
