@@ -686,8 +686,8 @@ C***END PROLOGUE  DSOS
       INTEGER IFLAG, INPFLG, IPRINT, IW(*), K1, K2, K3, K4, K5, K6,
      1     LIW, LRW, MXIT, NC, NCJS, NEQ, NSRI, NSRRC
       DOUBLE PRECISION ATOLX, FNC, RTOLX, RW(*), TOLF, X(*)
-      CHARACTER*8 XERN1
-      CHARACTER*16 XERN3, XERN4
+      CHARACTER(LEN=8) XERN1
+      CHARACTER(LEN=16) XERN3, XERN4
       EXTERNAL FNC
 C***FIRST EXECUTABLE STATEMENT  DSOS
       INPFLG = IFLAG
@@ -874,11 +874,15 @@ C
      1     FMAX, FMIN, FMXS, FN1, FN2, FNC, FP, H, HX, P(*), PMAX, RE,
      2     RTOLX, S(*), SRURO, TEMP(*), TEST, TOLF, URO, X(*), XNORM,
      3     Y(*), YJ, YN1, YN2, YN3, YNORM, YNS, ZERO
+      INTEGER DUMMYNC
 C
 C     BEGIN BLOCK PERMITTING ...EXITS TO 430
 C        BEGIN BLOCK PERMITTING ...EXITS TO 410
 C           BEGIN BLOCK PERMITTING ...EXITS TO 390
 C***FIRST EXECUTABLE STATEMENT  DSOSEQ
+      DUMMYNC=NC
+      FMIN=0.0D0
+      ISV=0
                URO = D1MACH(4)
                LOUN = I1MACH(2)
                ZERO = D1MACH(1)
@@ -1122,9 +1126,9 @@ C
                         IF (IPRINT .NE. (-1)) GO TO 220
                            MM = M - 1
 c                          WRITE (LOUN,210) FMAX,MM,(X(J), J = 1, N)
-  210                      FORMAT ('0RESIDUAL NORM =', D9.2, / 1X,
-     1                             'SOLUTION ITERATE (', I3, ')', /
-     2                             (1X, 5D26.14))
+c  210                      FORMAT ('0RESIDUAL NORM =', D9.2, / 1X,
+c     1                             'SOLUTION ITERATE (', I3, ')', /
+c     2                             (1X, 5D26.14))
   220                   CONTINUE
 C
 C                       TEST FOR CONVERGENCE TO A SOLUTION (RELATIVE
@@ -2381,12 +2385,20 @@ C   900510  Changed calling sequence to include LIBRARY and SUBROUTINE
 C           names, changed routine name from XERCTL to XERCNT.  (RWC)
 C   920501  Reformatted the REFERENCES section.  (WRB)
 C***END PROLOGUE  XERCNT
-      CHARACTER*(*) LIBRAR, SUBROU, MESSG
+      CHARACTER(LEN=*) LIBRAR, SUBROU, MESSG
+      INTEGER DUMMY, DUMMY2, DUMMY3
+      CHARACTER(LEN=1)DUMMY4,DUMMY5,DUMMY6
 C***FIRST EXECUTABLE STATEMENT  XERCNT
+      DUMMY=KONTRL
+      DUMMY2=LEVEL
+      DUMMY3=NERR
+      DUMMY4=LIBRAR
+      DUMMY5=MESSG
+      DUMMY6=SUBROU
       RETURN
       END
 *DECK XERHLT
-      SUBROUTINE XERHLT (MESSG)
+      SUBROUTINE XERHLT ()
 C***BEGIN PROLOGUE  XERHLT
 C***SUBSIDIARY
 C***PURPOSE  Abort program execution and print error message.
@@ -2420,7 +2432,7 @@ C   900510  Changed calling sequence to delete length of character
 C           and changed routine name from XERABT to XERHLT.  (RWC)
 C   920501  Reformatted the REFERENCES section.  (WRB)
 C***END PROLOGUE  XERHLT
-      CHARACTER*(*) MESSG
+c      CHARACTER*(*) MESSG
 C***FIRST EXECUTABLE STATEMENT  XERHLT
 c      STOP
       END
@@ -2477,7 +2489,7 @@ C             substrings of characters to construct the error message.
 C             Here is an example showing the use of both writing to
 C             an internal file and catenating character strings.
 C
-C                   CHARACTER*5 CHARN, CHARL
+C                   CHARACTER(LEN=5) CHARN, CHARL
 C                   WRITE (CHARN,10) N
 C                   WRITE (CHARL,10) LDA
 C                10 FORMAT(I5)
@@ -2611,9 +2623,9 @@ C           XERCTL to XERCNT.  (RWC)
 C   920501  Reformatted the REFERENCES section.  (WRB)
 C***END PROLOGUE  XERMSG
       CHARACTER*(*) LIBRAR, SUBROU, MESSG
-      CHARACTER*8 XLIBR, XSUBR
-      CHARACTER*72  TEMP
-      CHARACTER*20  LFIRST
+      CHARACTER(LEN=8) XLIBR, XSUBR
+      CHARACTER(LEN=72)  TEMP
+      CHARACTER(LEN=20)  LFIRST
 C***FIRST EXECUTABLE STATEMENT  XERMSG
       LKNTRL = J4SAVE (2, 0, .FALSE.)
       MAXMES = J4SAVE (4, 0, .FALSE.)
@@ -2632,7 +2644,7 @@ C
      *      'XERMSG -- INVALID ERROR NUMBER OR LEVEL$$ '//
      *      'JOB ABORT DUE TO FATAL ERROR.', 72)
          CALL XERSVE (' ', ' ', ' ', 0, 0, 0, KDUMMY)
-         CALL XERHLT (' ***XERMSG -- INVALID INPUT')
+c         CALL XERHLT (' ***XERMSG -- INVALID INPUT')
          RETURN
       ENDIF
 C
@@ -2782,9 +2794,9 @@ C
             CALL XERPRN(' ***', -1, 'JOB ABORT DUE TO FATAL ERROR.', 72)
          ENDIF
          CALL XERSVE (' ', ' ', ' ', -1, 0, 0, KDUMMY)
-         CALL XERHLT (' ')
-      ELSE
-         CALL XERHLT (MESSG)
+c         CALL XERHLT (' ')
+c      ELSE
+c         CALL XERHLT (MESSG)
       ENDIF
       RETURN
       END
@@ -2866,9 +2878,9 @@ C   920501  Reformatted the REFERENCES section.  (WRB)
 C***END PROLOGUE  XERPRN
       CHARACTER*(*) PREFIX, MESSG
       INTEGER NPREF, NWRAP
-      CHARACTER*148 CBUFF
+      CHARACTER(LEN=148) CBUFF
       INTEGER IU(5), NUNIT
-      CHARACTER*2 NEWLIN
+      CHARACTER(LEN=2) NEWLIN
       PARAMETER (NEWLIN = '$$')
 C***FIRST EXECUTABLE STATEMENT  XERPRN
       CALL XGETUA(IU,NUNIT)
@@ -3078,8 +3090,8 @@ C***END PROLOGUE  XERSVE
       PARAMETER (LENTAB=10)
       INTEGER LUN(5)
       CHARACTER*(*) LIBRAR, SUBROU, MESSG
-      CHARACTER*8  LIBTAB(LENTAB), SUBTAB(LENTAB), LIB, SUB
-      CHARACTER*20 MESTAB(LENTAB), MES
+      CHARACTER(LEN=8)  LIBTAB(LENTAB), SUBTAB(LENTAB), LIB, SUB
+      CHARACTER(LEN=20) MESTAB(LENTAB), MES
       DIMENSION NERTAB(LENTAB), LEVTAB(LENTAB), KOUNT(LENTAB)
       SAVE LIBTAB, SUBTAB, MESTAB, NERTAB, LEVTAB, KOUNT, KOUNTX, NMSG
       DATA KOUNTX/0/, NMSG/0/
@@ -3164,12 +3176,12 @@ C
 C
 C     Formats.
 C
- 9000 FORMAT ('0          ERROR MESSAGE SUMMARY' /
-     +   ' LIBRARY    SUBROUTINE MESSAGE START             NERR',
-     +   '     LEVEL     COUNT')
- 9010 FORMAT (1X,A,3X,A,3X,A,3I10)
- 9020 FORMAT ('0OTHER ERRORS NOT INDIVIDUALLY TABULATED = ', I10)
- 9030 FORMAT (1X)
+c 9000 FORMAT ('0          ERROR MESSAGE SUMMARY' /
+c     +   ' LIBRARY    SUBROUTINE MESSAGE START             NERR',
+c     +   '     LEVEL     COUNT')
+c 9010 FORMAT (1X,A,3X,A,3X,A,3I10)
+c 9020 FORMAT ('0OTHER ERRORS NOT INDIVIDUALLY TABULATED = ', I10)
+c 9030 FORMAT (1X)
       END
 *DECK XGETUA
       SUBROUTINE XGETUA (IUNITA, N)

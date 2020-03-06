@@ -1611,8 +1611,8 @@ C
    25 IER = 5
 c     WRITE (*,100) NIT, IERR
       RETURN
-  100 FORMAT (//5X,'*** Error in OPTIM:  NIT = ',I4,
-     .        ', IER = ',I1,' ***'/)
+c  100 FORMAT (//5X,'*** Error in OPTIM:  NIT = ',I4,
+c     .        ', IER = ',I1,' ***'/)
       END
       SUBROUTINE EDGE (IN1,IN2,X,Y, LWK,IWK,LIST,LPTR,
      .                 LEND, IER)
@@ -2106,17 +2106,17 @@ C   on convex hull boundary.
 C
    33 IER = 3
 c     WRITE (*,130) IN1, IN2
-  130 FORMAT (//5X,'*** Error in EDGE:  Invalid triangula',
-     .        'tion or null triangles on boundary'/
-     .        9X,'IN1 =',I4,', IN2=',I4/)
+c  130 FORMAT (//5X,'*** Error in EDGE:  Invalid triangula',
+c     .        'tion or null triangles on boundary'/
+c     .        9X,'IN1 =',I4,', IN2=',I4/)
       RETURN
 C
 C Error flag returned by OPTIM.
 C
    34 IER = 4
 c     WRITE (*,140) NIT, IERR
-  140 FORMAT (//5X,'*** Error in OPTIM:  NIT = ',I4,
-     .        ', IER = ',I1,' ***'/)
+c  140 FORMAT (//5X,'*** Error in OPTIM:  NIT = ',I4,
+c     .        ', IER = ',I1,' ***'/)
       RETURN
       END
       SUBROUTINE GETNP (NCC,LCC,N,X,Y,LIST,LPTR,LEND,
@@ -2857,7 +2857,7 @@ C
       X = (DBLE(IX)/30269.) + (DBLE(IY)/30307.) +
      .    (DBLE(IZ)/30323.)
       U = X - INT(X)
-      JRAND = DBLE(N)*U + 1.
+      JRAND = INT(DBLE(N)*U) + 1
       RETURN
       END
       LOGICAL FUNCTION LEFT (X1,Y1,X2,Y2,X0,Y0)
@@ -4488,25 +4488,25 @@ c     IF (NCC .GT. 0) WRITE (LUN,109) (LCT(I), I = 1,NCC)
 C
 C Print formats:
 C
-  100 FORMAT (///,24X,'TRIPACK (TRLIST) Output')
-  101 FORMAT (//16X,'Node',7X,'X(Node)',10X,'Y(Node)'//)
-  102 FORMAT (16X,I4,2E17.6)
-  103 FORMAT (//1X,'Triangle',8X,'Vertices',12X,'Neighbors'/
-     .        4X,'KT',7X,'N1',5X,'N2',5X,'N3',4X,'KT1',4X,
-     .        'KT2',4X,'KT3'/)
-  104 FORMAT (//1X,'Triangle',8X,'Vertices',12X,'Neighbors',
-     .        14X,'Arcs'/
-     .        4X,'KT',7X,'N1',5X,'N2',5X,'N3',4X,'KT1',4X,
-     .        'KT2',4X,'KT3',4X,'KA1',4X,'KA2',4X,'KA3'/)
-  105 FORMAT (2X,I4,2X,6(3X,I4),3(2X,I5))
-  106 FORMAT (///)
-  107 FORMAT (/1X,'NB = ',I4,' Boundary Nodes',5X,
-     .        'NA = ',I5,' Arcs',5X,'NT = ',I5,
-     .        ' Triangles')
-  108 FORMAT (/1X,'NCC =',I3,' Constraint Curves')
-  109 FORMAT (1X,9X,14I5)
-  110 FORMAT (//1X,10X,'*** Invalid Parameter:  N =',I5,
-     .        ', NROW =',I5,', NT =',I5,' ***')
+c  100 FORMAT (///,24X,'TRIPACK (TRLIST) Output')
+c  101 FORMAT (//16X,'Node',7X,'X(Node)',10X,'Y(Node)'//)
+c  102 FORMAT (16X,I4,2E17.6)
+c  103 FORMAT (//1X,'Triangle',8X,'Vertices',12X,'Neighbors'/
+c     .        4X,'KT',7X,'N1',5X,'N2',5X,'N3',4X,'KT1',4X,
+c     .        'KT2',4X,'KT3'/)
+c  104 FORMAT (//1X,'Triangle',8X,'Vertices',12X,'Neighbors',
+c     .        14X,'Arcs'/
+c     .        4X,'KT',7X,'N1',5X,'N2',5X,'N3',4X,'KT1',4X,
+c     .        'KT2',4X,'KT3',4X,'KA1',4X,'KA2',4X,'KA3'/)
+c  105 FORMAT (2X,I4,2X,6(3X,I4),3(2X,I5))
+c  106 FORMAT (///)
+c  107 FORMAT (/1X,'NB = ',I4,' Boundary Nodes',5X,
+c     .        'NA = ',I5,' Arcs',5X,'NT = ',I5,
+c     .        ' Triangles')
+c  108 FORMAT (/1X,'NCC =',I3,' Constraint Curves')
+c  109 FORMAT (1X,9X,14I5)
+c  110 FORMAT (//1X,10X,'*** Invalid Parameter:  N =',I5,
+c     .        ', NROW =',I5,', NT =',I5,' ***')
       END
       SUBROUTINE TRMESH (N,X,Y, LIST,LPTR,LEND,LNEW,NEAR,
      .                   NEXT,DIST,IER)
@@ -5563,11 +5563,11 @@ C
 C Output header comments.
 C
 c     WRITE (LUN,100,ERR=13) IPX1, IPY1, IPX2, IPY2
-  100 FORMAT ('%!PS-Adobe-3.0 EPSF-3.0'/
-     .        '%%BoundingBox:',4I4/
-     .        '%%Title:  Triangulation'/
-     .        '%%Creator:  TRIPACK'/
-     .        '%%EndComments')
+c  100 FORMAT ('%!PS-Adobe-3.0 EPSF-3.0'/
+c     .        '%%BoundingBox:',4I4/
+c     .        '%%Title:  Triangulation'/
+c     .        '%%Creator:  TRIPACK'/
+c     .        '%%EndComments')
 C
 C Set (IPX1,IPY1) and (IPX2,IPY2) to the corner coordinates
 C   of a viewport obtained by shrinking the bounding box by
@@ -5591,11 +5591,11 @@ c     WRITE (LUN,130,ERR=13) IPX2, IPY2
 c     WRITE (LUN,130,ERR=13) IPX2, IPY1
 c     WRITE (LUN,140,ERR=13)
 c     WRITE (LUN,150,ERR=13)
-  110 FORMAT (F12.6,' setlinewidth')
-  120 FORMAT (2I4,' moveto')
-  130 FORMAT (2I4,' lineto')
-  140 FORMAT ('closepath')
-  150 FORMAT ('stroke')
+c  110 FORMAT (F12.6,' setlinewidth')
+c  120 FORMAT (2I4,' moveto')
+c  130 FORMAT (2I4,' lineto')
+c  140 FORMAT ('closepath')
+c  150 FORMAT ('stroke')
 C
 C Set up a mapping from the window to the viewport.
 C
@@ -5604,8 +5604,8 @@ C
       TX = IPX1 - SFX*WX1
       TY = IPY1 - SFY*WY1
 c     WRITE (LUN,160,ERR=13) TX, TY, SFX, SFY
-  160 FORMAT (2F12.6,' translate'/
-     .        2F12.6,' scale')
+c  160 FORMAT (2F12.6,' translate'/
+c     .        2F12.6,' scale')
 C
 C The line thickness (believe it or fucking not) must be
 C   changed to reflect the new scaling which is applied to
@@ -5623,10 +5623,10 @@ c     WRITE (LUN,190,ERR=13) WX2, WY1
 c     WRITE (LUN,190,ERR=13) WX2, WY2
 c     WRITE (LUN,190,ERR=13) WX1, WY2
 c     WRITE (LUN,200,ERR=13)
-  170 FORMAT ('gsave')
-  180 FORMAT (2F12.6,' moveto')
-  190 FORMAT (2F12.6,' lineto')
-  200 FORMAT ('closepath clip newpath')
+c  170 FORMAT ('gsave')
+c  180 FORMAT (2F12.6,' moveto')
+c  190 FORMAT (2F12.6,' lineto')
+c  200 FORMAT ('closepath clip newpath')
 C
 C Draw the edges N0->N1, where N1 > N0, beginning with a
 C   loop on non-constraint nodes N0.  LPL points to the
@@ -5647,7 +5647,7 @@ C
 C   Add the edge to the path.
 C
 c           WRITE (LUN,210,ERR=13) X0, Y0, X(N1), Y(N1)
-  210       FORMAT (2F12.6,' moveto',2F12.6,' lineto')
+c  210       FORMAT (2F12.6,' moveto',2F12.6,' lineto')
           ENDIF
           IF (LP .NE. LPL) GO TO 2
     3   CONTINUE
@@ -5724,7 +5724,7 @@ C
 c       WRITE (LUN,150,ERR=13)
         T = DASHL*2.0/(SFX+SFY)
 c       WRITE (LUN,220,ERR=13) T
-  220   FORMAT ('[',F12.6,'] 0 setdash')
+c  220   FORMAT ('[',F12.6,'] 0 setdash')
         GO TO 4
       ENDIF
 C
@@ -5733,7 +5733,7 @@ C   no clip path).
 C
 c     WRITE (LUN,150,ERR=13)
 c     WRITE (LUN,230,ERR=13)
-  230 FORMAT ('grestore')
+c  230 FORMAT ('grestore')
       IF (NUMBR) THEN
 C
 C Nodes in the window are to be labeled with their indexes.
@@ -5742,8 +5742,8 @@ C   output the commands to select a font and scale it.
 C
         T = FSIZN*2.0/(SFX+SFY)
 c       WRITE (LUN,240,ERR=13) T
-  240   FORMAT ('/Helvetica findfont'/
-     .          F12.6,' scalefont setfont')
+c  240   FORMAT ('/Helvetica findfont'/
+c     .          F12.6,' scalefont setfont')
 C
 C   Loop on nodes N0 with coordinates (X0,Y0).
 C
@@ -5759,7 +5759,7 @@ C     character width to the right of the nodal position.
 C
 c         WRITE (LUN,180,ERR=13) X0, Y0
 c         WRITE (LUN,250,ERR=13) N0
-  250     FORMAT ('(',I3,') show')
+c  250     FORMAT ('(',I3,') show')
     9     CONTINUE
       ENDIF
 C
@@ -5773,10 +5773,10 @@ C Display TITLE centered above the plot:
 C
       Y0 = WY2 + 3.0*T
 c     WRITE (LUN,260,ERR=13) TITLE, (WX1+WX2)/2.0, Y0
-  260 FORMAT (A80/'  stringwidth pop 2 div neg ',F12.6,
-     .        ' add ',F12.6,' moveto')
+c  260 FORMAT (A80/'  stringwidth pop 2 div neg ',F12.6,
+c     .        ' add ',F12.6,' moveto')
 c     WRITE (LUN,270,ERR=13) TITLE
-  270 FORMAT (A80/'  show')
+c  270 FORMAT (A80/'  show')
       IF (ANNOT) THEN
 C
 C Display the window extrema below the plot.
@@ -5787,27 +5787,27 @@ c       WRITE (LUN,180,ERR=13) X0, Y0
 c       WRITE (LUN,280,ERR=13) WX1, WX2
         Y0 = Y0 - 2.0*T
 c       WRITE (LUN,290,ERR=13) X0, Y0, WY1, WY2
-  280   FORMAT ('(Window:   WX1 = ',E9.3,',   WX2 = ',E9.3,
-     .          ') show')
-  290   FORMAT ('(Window:  ) stringwidth pop ',F12.6,' add',
-     .          F12.6,' moveto'/
-     .          '( WY1 = ',E9.3,',   WY2 = ',E9.3,') show')
+c  280   FORMAT ('(Window:   WX1 = ',E9.3,',   WX2 = ',E9.3,
+c     .          ') show')
+c  290   FORMAT ('(Window:  ) stringwidth pop ',F12.6,' add',
+c     .          F12.6,' moveto'/
+c     .          '( WY1 = ',E9.3,',   WY2 = ',E9.3,') show')
       ENDIF
 C
 C Paint the path and output the showpage command and
 C   end-of-file indicator.
 C
 c     WRITE (LUN,300,ERR=13)
-  300 FORMAT ('stroke'/
-     .        'showpage'/
-     .        '%%EOF')
+c  300 FORMAT ('stroke'/
+c     .        'showpage'/
+c     .        '%%EOF')
 C
 C HP's interpreters require a one-byte End-of-PostScript-Job
 C   indicator (to eliminate a timeout error message):
 C   ASCII 4.
 C
 c     WRITE (LUN,310,ERR=13) CHAR(4)
-  310 FORMAT (A1)
+c  310 FORMAT (A1)
 C
 C No error encountered.
 C
@@ -5826,7 +5826,8 @@ C
 C
 C Error writing to unit LUN.
 C
-   13 IER = 3
+c 13
+      IER = 3
       RETURN
       END
       SUBROUTINE TRPRNT (NCC,LCC,N,X,Y,LIST,LPTR,LEND,LOUT,
@@ -6004,19 +6005,19 @@ c     IF (NCC .GT. 0) WRITE (LUN,109) (LCC(I), I = 1,NCC)
 C
 C Print formats:
 C
-  100 FORMAT (///,26X,'Adjacency Sets,    N = ',I5//)
-  101 FORMAT (1X,'Node',32X,'Neighbors of Node'//)
-  102 FORMAT (1X,'Node',5X,'X(Node)',8X,'Y(Node)',
-     .        20X,'Neighbors of Node'//)
-  103 FORMAT (1X,I4,5X,14I5/(1X,9X,14I5))
-  104 FORMAT (1X,I4,2E15.6,5X,8I5/(1X,39X,8I5))
-  105 FORMAT (1X)
-  106 FORMAT (///)
-  107 FORMAT (/1X,'NB = ',I4,' Boundary Nodes',5X,
-     .        'NA = ',I5,' Arcs',5X,'NT = ',I5,
-     .        ' Triangles')
-  108 FORMAT (/1X,'NCC =',I3,' Constraint Curves')
-  109 FORMAT (1X,9X,14I5)
-  110 FORMAT (1X,10X,'*** N is outside its valid',
-     .        ' range ***')
+c  100 FORMAT (///,26X,'Adjacency Sets,    N = ',I5//)
+c  101 FORMAT (1X,'Node',32X,'Neighbors of Node'//)
+c  102 FORMAT (1X,'Node',5X,'X(Node)',8X,'Y(Node)',
+c     .        20X,'Neighbors of Node'//)
+c  103 FORMAT (1X,I4,5X,14I5/(1X,9X,14I5))
+c  104 FORMAT (1X,I4,2E15.6,5X,8I5/(1X,39X,8I5))
+c  105 FORMAT (1X)
+c  106 FORMAT (///)
+c  107 FORMAT (/1X,'NB = ',I4,' Boundary Nodes',5X,
+c     .        'NA = ',I5,' Arcs',5X,'NT = ',I5,
+c     .        ' Triangles')
+c  108 FORMAT (/1X,'NCC =',I3,' Constraint Curves')
+c  109 FORMAT (1X,9X,14I5)
+c  110 FORMAT (1X,10X,'*** N is outside its valid',
+c     .        ' range ***')
       END

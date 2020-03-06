@@ -27,11 +27,11 @@
       if(!all(xlim==c(min(x$tri$x)-
                 0.1*diff(range(x$tri$x)),
                 max(x$tri$x)+
-                0.1*diff(range(x$tri$x))) ||
-              !all(ylim==c(min(x$tri$y)-
-                     0.1*diff(range(x$tri$y)),
-                     max(x$tri$y)+
-                     0.1*diff(range(x$tri$y)))))){
+                0.1*diff(range(x$tri$x))) |
+         !all(ylim==c(min(x$tri$y)-
+                0.1*diff(range(x$tri$y)),
+                max(x$tri$y)+
+                0.1*diff(range(x$tri$y)))))){
         print(xlim)
         print(ylim)
         warning("isometric option not used as xlim or ylim explicitly given")

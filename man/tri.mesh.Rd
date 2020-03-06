@@ -22,7 +22,7 @@ tri.mesh(x, y = NULL, duplicate = "error",
 
     Note that the jitter is not generated randomly unless
     \code{jitter.random} is set to \code{TRUE}. This ensures
-    reproducable result. \code{\link[akima]{interp}} of package
+    reproducable results. \code{\link[akima]{interp}} of package
     \code{akima} uses the same jitter mechanism. That means you can
     plot the triangulation on top of the interpolation and see the
     same triangulation as used for interpolation, see examples for

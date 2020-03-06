@@ -65,7 +65,13 @@ C
       INTEGER I, INC, K, KK, LP, LPL, LUN, 
      .        ND, NL, NLMAX, NMAX, NODE, NN
       DATA  NMAX/9999/,  NLMAX/60/
+      INTEGER DUMMY1, DUMMY2
+      DOUBLE PRECISION DUMMYX, DUMMYY
 C
+      DUMMY1=LCC(1)
+      DUMMY2=NCC
+      DUMMYX=X(1); DUMMYY=Y(1)
+      I=0
       NN = N
       LUN = LOUT
       IF (LUN .LT. 0  .OR.  LUN .GT. 99) LUN = 6

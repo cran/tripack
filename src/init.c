@@ -191,4 +191,9 @@ R_init_tripack(DllInfo *info)
   R_registerRoutines(info, 
 		     NULL /*cMethods*/, NULL /*callMethods*/, 
 		     fortranMethods, NULL/*externalMethods*/);
+  R_useDynamicSymbols(info, TRUE);
+  /* does not work with Fortran code:
+   * R_useDynamicSymbols(info, FALSE);
+   * R_forceSymbols(info, TRUE);
+   */
 }

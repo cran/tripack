@@ -1,3 +1,5 @@
+# does not work with Fortran:
+#useDynLib(tripack, .registration = TRUE, .fixes = "c_")
 useDynLib(tripack)
 # Export all names
 export("add.constraint")
