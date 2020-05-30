@@ -24,11 +24,11 @@ int F77_NAME(bnodes)(int *n, int *list, int *lptr, int *lend,
 
 int F77_NAME(inhull)(double *xp, double *yp, int *np, 
 		     double *x, double *y, int *n, int *list, 
-		     int *lptr, int *lend, int *inh);
+		     int *lptr, int *lend, void *inh);
 
 int F77_NAME(onhull)(double *xp, double *yp, int *np, 
 		     double *x, double *y, int *n, int *list, 
-		     int *lptr, int *lend, int *onh, double *eps);
+		     int *lptr, int *lend, void *onh, double *eps);
 
 int F77_NAME(trlist)(int *ncc, int *lcc, int *n, int *list, 
 		     int *lptr, int *lend, int *nrow, int *nt,

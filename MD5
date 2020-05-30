@@ -1,5 +1,5 @@
 9d3cba47b3f9c7a030ff1fb879216e45 *ChangeLog
-ced8d70a79a67f1cd99aa596c45663ce *DESCRIPTION
+48200e18789a53695e5d6a3ee2a728f9 *DESCRIPTION
 74becbb38115b2578f55067be5b20a37 *LICENSE
 725dda9bd7546145690e5f03100bb560 *NAMESPACE
 4b1274c233e3a31f2054854192f9c4b3 *R/add.constraint.R
@@ -78,7 +78,7 @@ f9fd7db4efc7510c7fd42b7044f7d4f9 *src/init.c
 3567d30ffc1b1ebce6dd018766cf036f *src/left.f
 c230248335ba524e1c8c3984e0586750 *src/qsort.f
 79a84428fb5bd5a559eb7150bffdd623 *src/tripack.f
-8fe35faef2f13bd91c83c3aa904c33d8 *src/tripack.h
+f69df6b2a988063aadb28faa89824246 *src/tripack.h
 58a1a2ea9a2fe880aba56f4fda19b7dd *src/troutp.f
 25154e70dfa236914f1d0762db8db099 *src/troutq.f
 0699ae48239bc3bb0566ae9ea8fa9b54 *src/vleft.f
