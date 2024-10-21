@@ -80,6 +80,16 @@ The adjacency information representing the triangulation
 is stored as a linked list requiring approximately 13N
 storage locations.
 }
+\note{
+There is re-implementation of this function available in
+package \code{interp} under the same name with the same arguments.
+But the return value is of a different class. So returned objects
+from this function can not be used by functions of same name in 
+package \code{interp}. But code written to use functions from this
+package can be reused with the new package unless a constrained
+triangulation is wanted. This is the only thing missing in the new 
+implementation.
+}
 \references{
   R. J. Renka (1996). Algorithm 751: TRIPACK: a constrained
   two-dimensional Delaunay triangulation package.
